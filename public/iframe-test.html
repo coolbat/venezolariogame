@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Iframe - Venezolario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .iframe-container {
+            background: white;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 20px 0;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 15px;
+            background: #f0f0f0;
+        }
+        .info {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .controls {
+            text-align: center;
+            margin: 20px 0;
+        }
+        button {
+            background: #ff6b35;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background: #e55a2b;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🇻🇪 Prueba de Integración - Venezolario</h1>
+        
+        <div class="info">
+            <h2>📝 Información de la Prueba</h2>
+            <p>Esta página demuestra cómo el juego Venezolario puede ser integrado en otros sitios web usando iframe.</p>
+            <ul>
+                <li><strong>Tamaño:</strong> Responsive, se adapta al contenedor</li>
+                <li><strong>Modo:</strong> Ventana optimizada para iframe</li>
+                <li><strong>Idioma:</strong> Interfaz completamente en español</li>
+                <li><strong>Compatibilidad:</strong> Funciona en todos los navegadores modernos</li>
+            </ul>
+        </div>
+
+        <div class="controls">
+            <button onclick="changeSize('600px')">Tamaño Normal</button>
+            <button onclick="changeSize('500px')">Tamaño Compacto</button>
+            <button onclick="changeSize('700px')">Tamaño Grande</button>
+            <button onclick="fullScreen()">Pantalla Completa</button>
+        </div>
+
+        <div class="iframe-container">
+            <iframe 
+                id="venezolario-frame"
+                src="http://localhost:3000"
+                title="Venezolario - Juego de Jerga Venezolana"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="info">
+            <h2>🛠️ Código de Integración</h2>
+            <p>Para integrar Venezolario en tu sitio web, usa el siguiente código:</p>
+            <pre style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 10px; overflow-x: auto;">
+&lt;iframe 
+    src="https://venezolario.com"
+    width="100%"
+    height="600px"
+    frameborder="0"
+    title="Venezolario - Juego de Jerga Venezolana"
+    allowfullscreen&gt;
+&lt;/iframe&gt;</pre>
+        </div>
+    </div>
+
+    <script>
+        function changeSize(height) {
+            document.getElementById('venezolario-frame').style.height = height;
+        }
+
+        function fullScreen() {
+            const iframe = document.getElementById('venezolario-frame');
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.webkitRequestFullscreen) {
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) {
+                iframe.msRequestFullscreen();
+            }
+        }
+
+        // Mostrar información sobre el iframe
+        window.addEventListener('load', function() {
+            console.log('🎮 Venezolario cargado en iframe');
+            console.log('📱 Compatible con dispositivos móviles');
+            console.log('🌐 Optimizado para integración web');
+        });
+    </script>
+</body>
+</html>

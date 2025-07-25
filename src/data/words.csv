@@ -1,0 +1,201 @@
+id,standardWord,venezuelanWord,definition,pronunciation,examples,culturalContext,category,difficulty,cardId
+1,joven,chamo,joven/amigo,CHAH-moh,"Oye chamo ven acá|Ese chamo es muy amable|Los chamos están jugando",Una de las palabras más icónicas del venezolano. Se usa para referirse a cualquier joven o amigo,expression,1,card_chamo
+2,banana,cambur,plátano,kam-BOOR,"Me gusta comer cambur|Compré unos cambures en el mercado|El cambur está maduro",Término venezolano para referirse al plátano. Viene de lenguas indígenas precolombinas,food,1,card_cambur
+3,amigo,pana,amigo íntimo,PAH-nah,"Ese es mi pana|Vamos pana|Mi pana me ayudó",Palabra muy usada en Venezuela para referirse a un amigo cercano o compañero,expression,1,card_pana
+4,dinero,real,dinero,reh-AHL,"No tengo reales|Dame unos reales|Gastó todos sus reales",Forma coloquial de referirse al dinero en Venezuela. Proviene de la antigua moneda española,expression,2,card_real
+5,casa,rancho,casa humilde,RAHN-choh,"Voy para mi rancho|El rancho está bonito|Limpiando el rancho",En Venezuela se refiere a la casa propia especialmente si es modesta,expression,2,card_rancho
+6,autobús,carrito,transporte público,kah-RREE-toh,"Espero el carrito|Se dañó el carrito|El carrito va lleno",Término usado para los pequeños autobuses urbanos en Venezuela,expression,2,card_carrito
+7,trabajar,chambear,trabajar,cham-beh-AHR,"Voy a chambear|Chambeando duro|No quiere chambear",Verbo muy común para referirse al trabajo en Venezuela,expression,2,card_chambear
+8,comida,jama,comida,HAH-mah,"¿Qué hay de jama?|Buena jama|Preparando la jama",Forma coloquial de referirse a la comida en Venezuela,food,2,card_jama
+9,cerveza,birra,cerveza,BEE-rrah,"Una birra fría|Tomando birra|¿Quieres birra?",Manera informal de pedir una cerveza en Venezuela,food,2,card_birra
+10,problema,peo,problema/lío,PEH-oh,"Tengo un peo|Sin peos|Qué peo tienes",Palabra muy usada para referirse a problemas o situaciones complicadas,expression,3,card_peo
+11,fiesta,rumba,fiesta/celebración,ROOM-bah,"Vamos a la rumba|Buena rumba|La rumba estuvo genial",Término popular para referirse a fiestas y celebraciones en Venezuela,expression,3,card_rumba
+12,novio,jevo,novio,HEH-voh,"Mi jevo es genial|Saliendo con mi jevo|¿Tienes jevo?",Forma como las mujeres venezolanas se refieren a su novio,expression,3,card_jevo
+13,novia,jeva,novia,HEH-vah,"Mi jeva es bella|Con mi jeva|¿Dónde está tu jeva?",Forma como los hombres venezolanos se refieren a su novia,expression,3,card_jeva
+14,borracho,jalado,ebrio,hah-LAH-doh,"Está jalado|Se puso jalado|Muy jalado anoche",Estado de embriaguez en el argot venezolano,expression,3,card_jalado
+15,mentira,embuste,falsedad,em-BOOS-teh,"Eso es embuste|No digas embustes|Puro embuste",Manera venezolana de referirse a mentiras o engaños,expression,4,card_embuste
+16,carro,cacharro,automóvil viejo,kah-CHAH-roh,"Mi cacharro no arranca|Ese cacharro está dañado|Vendí el cacharro",Forma despectiva de referirse a un carro viejo o en mal estado,expression,2,card_cacharro
+17,persona,tipo,individuo,TEE-poh,"Ese tipo es raro|No conozco a ese tipo|Qué tipo tan extraño",Forma neutral de referirse a una persona,expression,1,card_tipo
+18,mujer,guebon,mujer,gweh-BONE,"Esa güebona es linda|La güebona llegó tarde|¿Viste a la güebona?",Forma coloquial de referirse a una mujer en algunos contextos,expression,3,card_guebon
+19,niño,carajito,niño pequeño,kah-rah-HEE-toh,"El carajito está jugando|Ese carajito es travieso|Los carajitos del barrio",Diminutivo cariñoso para referirse a niños pequeños,expression,2,card_carajito
+20,viejo,carcamán,persona mayor,kar-kah-MAHN,"Ese carcamán sabe mucho|El carcamán del barrio|Los carcamanes tienen experiencia",Forma de referirse respetuosamente a personas mayores,expression,3,card_carcaman
+21,loco,arrecho,genial/molesto,ah-RREH-choh,"Está arrecho|Qué cosa tan arrecha|Me tiene arrecho",Palabra con múltiples significados: puede ser genial o estar molesto,expression,4,card_arrecho
+22,rápido,volao,muy rápido,voh-LAH-oh,"Vete volao|Llegó volao|Corriendo volao",Expresión para indicar gran velocidad o prisa,expression,3,card_volao
+23,tonto,güevón,tonto/bobo,gweh-VOHN,"No seas güevón|Ese güevón no entiende|Qué güevonada",Forma común de llamar tonto a alguien en Venezuela,expression,2,card_guevon
+24,bonito,chevere,excelente,CHEH-veh-reh,"Está chévere|Qué chévere|Todo chévere",Una de las expresiones más características del venezolano para expresar aprobación,expression,1,card_chevere
+25,malo,ladilla,molesto/malo,lah-DEE-yah,"Qué ladilla|Es una ladilla|No seas ladilla",Expresión para algo molesto o fastidioso,expression,2,card_ladilla
+26,grande,burda,muy/mucho,BOOR-dah,"Burda de grande|Burda bueno|Burda de gente",Intensificador muy usado en Venezuela,expression,3,card_burda
+27,pequeño,chiquito,diminuto,chee-KEE-toh,"Está chiquitico|Un chiquito favor|Chiquita cosa",Diminutivo cariñoso muy usado en Venezuela,expression,1,card_chiquito
+28,caliente,ladilloso,que da fastidio,lah-dee-YOH-soh,"Está ladilloso|Tiempo ladilloso|Qué ladilloso",Se refiere tanto al clima como a situaciones molestas,expression,3,card_ladilloso
+29,feo,chueco,mal hecho,CHOO-eh-koh,"Quedó chueco|Está todo chueco|No hagas eso chueco",Referirse a algo mal hecho o torcido,expression,2,card_chueco
+30,dulce,melcocha,caramelo suave,mel-KOH-chah,"Dame una melcocha|Las melcochas están ricas|Compramos melcochas",Dulce tradicional venezolano muy popular,food,2,card_melcocha
+31,refresco,fresquito,bebida fría,fres-KEE-toh,"Un fresquito por favor|Fresquitos bien fríos|Venden fresquitos",Manera cariñosa de pedir una bebida fría,food,1,card_fresquito
+32,pan,canilla,pan francés,kah-NEE-yah,"Compra canillas|Las canillas están calientes|Canilla con mortadela",Tipo específico de pan muy popular en Venezuela,food,2,card_canilla
+33,café,marrón,café con leche,mah-RROHN,"Un marrón por favor|Marrón caliente|Me gusta el marrón",Forma específica de pedir café con leche en Venezuela,food,2,card_marron
+34,aguacate,palta,aguacate,PAHL-tah,"La palta está madura|Ensalada con palta|Palta con arepa",Aunque más común en otros países latinos también se usa en Venezuela,food,3,card_palta
+35,sandwich,pepito,emparedado,peh-PEE-toh,"Un pepito de pollo|Los pepitos están buenos|Pepito completo",Sandwich venezolano tradicionalmente de carne,food,2,card_pepito
+36,helado,frio frio,helado,FREE-oh FREE-oh,"Compro frío frío|El frío frío está rico|Helados frío frío",Forma pintoresca de vender helados en Venezuela,food,1,card_friofrio
+37,jugo,guarapo,jugo de caña,gwah-RAH-poh,"Guarapo de caña|El guarapo está dulce|Venden guarapo fresco",Bebida tradicional venezolana hecha de caña de azúcar,food,3,card_guarapo
+38,carne,bistec,filete de carne,bees-TEHK,"Bistec a la plancha|El bistec está bueno|Bistec encebollado",Corte de carne muy popular en la cocina venezolana,food,2,card_bistec
+39,pollo,pollito,pollo,poh-YEE-toh,"Pollito a la brasa|El pollito está listo|Pollito frito",Diminutivo cariñoso para el pollo,food,1,card_pollito
+40,pescado,mojarra,tipo de pescado,moh-HAH-rrah,"Mojarra frita|La mojarra está fresca|Mojarra al horno",Pescado muy consumido en la costa venezolana,food,3,card_mojarra
+41,zapato,cotiza,calzado deportivo,koh-TEE-sah,"Mis cotizas nuevas|Las cotizas están sucias|Ponte las cotizas",Zapatos deportivos o informales en Venezuela,expression,2,card_cotiza
+42,camisa,franela,camiseta,frah-NEH-lah,"Mi franela favorita|La franela está sucia|Ponte la franela",Camiseta o playera en el vocabulario venezolano,expression,1,card_franela
+43,pantalón,blue jean,pantalón vaquero,BLOO-YEEN,"Mi blue jean favorito|El blue jean está apretado|Blue jeans nuevos",Pantalones vaqueros en Venezuela,expression,2,card_bluejean
+44,dinero,plata,dinero,PLAH-tah,"No tengo plata|Dame plata|Gastó toda la plata",Sinónimo común de dinero en Venezuela,expression,1,card_plata
+45,trabajo,chamba,empleo,CHAM-bah,"Busco chamba|Mi chamba es buena|Sin chamba",Trabajo o empleo en el argot venezolano,expression,2,card_chamba
+46,jefe,boss,supervisor,BOHS,"El boss llegó|Habla con el boss|El boss está bravo",Jefe o supervisor en el trabajo,expression,2,card_boss
+47,policía,patrulla,agente policial,pah-TROO-yah,"Llegó la patrulla|La patrulla anda por aquí|Cuidado con la patrulla",Policía o patrulla policial,expression,3,card_patrulla
+48,hospital,clínica,centro médico,KLEE-nee-kah,"Voy a la clínica|En la clínica me curaron|La clínica está cerca",Centro de salud o hospital,expression,2,card_clinica
+49,escuela,liceo,colegio secundario,lee-SEH-oh,"Estudio en el liceo|El liceo está cerrado|Graduación del liceo",Escuela secundaria en Venezuela,expression,2,card_liceo
+50,universidad,uni,centro de estudios superiores,OO-nee,"Voy a la uni|En la uni tengo clases|Graduado de la uni",Forma abreviada de universidad,expression,2,card_uni
+51,médico,doctor,profesional de la salud,dok-TOHR,"El doctor me revisó|Cita con el doctor|El doctor dijo que...",Profesional médico,expression,1,card_doctor
+52,enfermera,nurse,profesional de enfermería,NOORS,"La nurse me puso la inyección|Habla con la nurse|La nurse es amable",Profesional de enfermería,expression,3,card_nurse
+53,profesor,maestro,educador,mah-EHS-troh,"El maestro explicó bien|Mi maestro favorito|El maestro llegó tarde",Educador o profesor,expression,1,card_maestro
+54,estudiante,chamito,joven estudiante,chah-MEE-toh,"Los chamitos del salón|Ese chamito estudia mucho|Los chamitos están en recreo",Estudiante joven,expression,2,card_chamito
+55,música,música,arte sonoro,MOO-see-kah,"Pone música|La música está buena|Me gusta esa música",Arte de los sonidos,expression,1,card_musica
+56,baile,perreo,baile sensual,peh-RREH-oh,"Vamos a perrear|El perreo está bueno|Música para perreo",Estilo de baile muy popular,expression,4,card_perreo
+57,cantante,vocalista,intérprete musical,voh-kah-LEES-tah,"El vocalista canta bien|La vocalista es famosa|Nuevo vocalista",Persona que canta profesionalmente,expression,3,card_vocalista
+58,guitarra,cuatro,instrumento venezolano,KWAH-troh,"Toca el cuatro|Mi cuatro suena bien|Música de cuatro",Instrumento musical tradicional venezolano,expression,3,card_cuatro
+59,tambor,tambora,instrumento de percusión,tam-BOH-rah,"Suena la tambora|Ritmo de tambora|Toca la tambora",Instrumento de percusión tradicional,expression,3,card_tambora
+60,canción,tema,pieza musical,TEH-mah,"Ese tema está bueno|Mi tema favorito|Nuevo tema musical",Canción o pieza musical,expression,2,card_tema
+61,radio,emisora,estación de radio,eh-mee-SOH-rah,"Escucha esa emisora|La emisora toca buena música|Cambié de emisora",Estación de radio,expression,2,card_emisora
+62,televisión,TV,aparato televisivo,teh-VEH,"Viendo TV|La TV está dañada|Programas de TV",Televisor,expression,1,card_tv
+63,teléfono,cel,teléfono celular,SEHL,"Llámame al cel|Mi cel se dañó|Nuevo cel",Teléfono móvil,expression,1,card_cel
+64,computadora,compu,ordenador,kom-POO,"Mi compu es rápida|La compu se colgó|Trabajando en la compu",Computadora personal,expression,2,card_compu
+65,internet,web,red mundial,WEHB,"Conectado a la web|La web está lenta|Buscando en la web",Internet o red mundial,expression,2,card_web
+66,mensaje,texto,comunicación escrita,TEHKS-toh,"Manda un texto|Recibí tu texto|Texto importante",Mensaje de texto,expression,2,card_texto
+67,foto,selfie,autorretrato,SEHL-fee,"Tomemos un selfie|Mi selfie salió bien|Selfie grupal",Autorretrato con cámara,expression,2,card_selfie
+68,video,clip,grabación audiovisual,KLEEP,"Grabé un clip|El clip está viral|Nuevo clip musical",Video corto,expression,2,card_clip
+69,bicicleta,bici,vehículo de dos ruedas,BEE-see,"Voy en bici|Mi bici nueva|La bici está dañada",Bicicleta,expression,1,card_bici
+70,motocicleta,moto,vehículo motorizado,MOH-toh,"Voy en moto|Mi moto es rápida|La moto no arranca",Motocicleta,expression,1,card_moto
+71,autobús,bus,transporte público,BOOS,"Tomé el bus|El bus llegó tarde|Bus lleno",Autobús de transporte público,expression,1,card_bus
+72,taxi,taxi,servicio de transporte,TAHK-see,"Llamé un taxi|El taxi me cobró mucho|Taxi disponible",Servicio de transporte privado,expression,1,card_taxi
+73,avión,jet,aeronave,YEHT,"Viajé en jet|El jet despegó|Jet privado",Avión a reacción,expression,3,card_jet
+74,barco,lancha,embarcación,LAHN-chah,"Paseo en lancha|La lancha es rápida|Lancha nueva",Embarcación pequeña,expression,2,card_lancha
+75,playa,playita,orilla del mar,plah-YEE-tah,"Vamos a la playita|La playita está linda|Día de playita",Playa pequeña o bonita,expression,1,card_playita
+76,mar,marecito,océano,mah-reh-SEE-toh,"El marecito está calmo|Vista al marecito|Brisa del marecito",Forma cariñosa de referirse al mar,expression,2,card_marecito
+77,sol,solcito,astro rey,sohl-SEE-toh,"El solcito está fuerte|Día de solcito|Bronceándome con el solcito",Forma cariñosa del sol,expression,1,card_solcito
+78,lluvia,aguacero,precipitación fuerte,ah-gwah-SEH-roh,"Cayó un aguacero|El aguacero nos mojó|Aguacero tropical",Lluvia intensa típica del trópico,expression,2,card_aguacero
+79,viento,brisa,corriente de aire,BREE-sah,"La brisa está fresca|Brisa del mar|Suave brisa",Viento suave y agradable,expression,1,card_brisa
+80,calor,calor,alta temperatura,kah-LOHR,"Hace mucho calor|El calor está fuerte|Día de calor",Sensación de alta temperatura,expression,1,card_calor
+81,frío,fresquito,baja temperatura,fres-KEE-toh,"Está fresquito|Mañana fresquita|Aire fresquito",Sensación agradable de frescura,expression,1,card_fresquito2
+82,noche,nochecita,período nocturno,noh-cheh-SEE-tah,"La nochecita está linda|Paseo en la nochecita|Nochecita romántica",Forma cariñosa de la noche,expression,2,card_nochecita
+83,día,diita,período diurno,dee-EE-tah,"Un diita hermoso|Diita de descanso|Diita perfecto",Forma cariñosa del día,expression,1,card_diita
+84,semana,semanita,período de siete días,seh-mah-NEE-tah,"Esta semanita|Semanita ocupada|Nueva semanita",Forma cariñosa de la semana,expression,2,card_semanita
+85,mes,mesecito,período mensual,meh-seh-SEE-toh,"Este mesecito|Mesecito difícil|Nuevo mesecito",Forma cariñosa del mes,expression,2,card_mesecito
+86,año,añito,período anual,ah-NYEE-toh,"Este añito|Añito nuevo|Añito especial",Forma cariñosa del año,expression,2,card_anito
+87,cumpleaños,cumple,celebración de nacimiento,KOOM-pleh,"Es mi cumple|Fiesta de cumple|Regalo de cumple",Celebración del día de nacimiento,expression,1,card_cumple
+88,regalo,regalito,obsequio,reh-gah-LEE-toh,"Un regalito especial|Regalito de cumpleaños|Lindo regalito",Obsequio pequeño o cariñoso,expression,1,card_regalito
+89,sorpresa,sorpresita,algo inesperado,sohr-preh-SEE-tah,"Tengo una sorpresita|Sorpresita linda|Gran sorpresita",Sorpresa pequeña o cariñosa,expression,2,card_sorpresita
+90,beso,besito,muestra de cariño,beh-SEE-toh,"Dame un besito|Besito de buenas noches|Besito tierno",Beso pequeño y cariñoso,expression,1,card_besito
+91,abrazo,abracito,muestra de afecto,ah-brah-SEE-toh,"Un abracito fuerte|Abracito de oso|Abracito cariñoso",Abrazo pequeño y tierno,expression,1,card_abracito
+92,sonrisa,sonrisita,expresión de alegría,sohn-ree-SEE-tah,"Una sonrisita linda|Sonrisita encantadora|Su sonrisita me gusta",Sonrisa pequeña y dulce,expression,2,card_sonrisita
+93,feliz,contento,estado de alegría,kohn-TEHN-toh,"Estoy muy contento|Día contento|Contento de verte",Estado de satisfacción y alegría,expression,1,card_contento
+94,triste,triston,estado de melancolía,trees-TOHN,"Está tristón|Día tristón|Se puso tristón",Estado de tristeza leve,expression,2,card_triston
+95,enojado,bravo,estado de ira,BRAH-voh,"Está bravo|Se puso bravo|Día bravo",Estado de enojo o molestia,expression,1,card_bravo
+96,cansado,cansadito,estado de fatiga,kahn-sah-DEE-toh,"Estoy cansadito|Día cansadito|Se ve cansadito",Estado de fatiga leve,expression,1,card_cansadito
+97,dormido,durmiendo,estado de sueño,door-mee-EHN-doh,"Está durmiendo|Durmiendo tranquilo|Niño durmiendo",En estado de sueño,expression,1,card_durmiendo
+98,despierto,despiertito,estado de vigilia,des-pee-ehr-TEE-toh,"Ya está despiertito|Despiertito temprano|Bien despiertito",Estado de estar despierto,expression,2,card_despiertito
+99,hambre,hambrecita,sensación de apetito,ahm-breh-SEE-tah,"Tengo hambrecita|Hambrecita de pollo|Se le quitó la hambrecita",Sensación leve de hambre,expression,1,card_hambrecita
+100,sed,sedecita,sensación de necesidad de beber,seh-deh-SEE-tah,"Tengo sedecita|Sedecita de agua|Se me quitó la sedecita",Sensación leve de sed,expression,2,card_sedecita
+101,dolor,dolorcito,sensación de malestar,doh-lohr-SEE-toh,"Tengo un dolorcito|Dolorcito de cabeza|Se me quitó el dolorcito",Dolor leve o molestia menor,expression,2,card_dolorcito
+102,salud,saludcita,estado de bienestar,sah-lood-SEE-tah,"Mi saludcita está bien|Cuidando mi saludcita|Buena saludcita",Estado de salud en diminutivo cariñoso,expression,3,card_saludicita
+103,enfermo,enfermito,estado de malestar,ehn-fehr-MEE-toh,"Está enfermito|Niño enfermito|Se siente enfermito",Estado leve de enfermedad,expression,2,card_enfermito
+104,medicina,pastillita,medicamento,pahs-tee-YEE-tah,"Toma tu pastillita|Pastillita para el dolor|Pastillita diaria",Medicamento en forma de pastilla pequeña,expression,2,card_pastillita
+105,doctor,doctorcito,médico,dok-tohr-SEE-toh,"El doctorcito me revisó|Cita con el doctorcito|Doctorcito bueno",Médico en forma cariñosa,expression,2,card_doctorcito
+106,hospital,hospitalito,centro médico,ohs-pee-tah-LEE-toh,"Voy al hospitalito|El hospitalito está cerca|En el hospitalito me curaron",Hospital pequeño o en forma cariñosa,expression,3,card_hospitalito
+107,farmacia,farmaciita,establecimiento de medicinas,fahr-mah-SEE-tah,"Voy a la farmaciita|La farmaciita está abierta|Compré en la farmaciita",Farmacia en forma cariñosa,expression,3,card_farmaciita
+108,dinero,platita,dinero,plah-TEE-tah,"No tengo platita|Dame platita|Gastó toda su platita",Dinero en forma cariñosa y diminutiva,expression,1,card_platita
+109,banco,banquito,institución financiera,bahn-KEE-toh,"Voy al banquito|El banquito está cerrado|Saqué del banquito",Banco en forma cariñosa,expression,2,card_banquito
+110,tarjeta,tarjetita,medio de pago,tahr-heh-TEE-tah,"Mi tarjetita está vencida|Pago con tarjetita|Tarjetita nueva",Tarjeta de crédito o débito en diminutivo,expression,2,card_tarjetita
+111,efectivo,efectivito,dinero en billetes,eh-fehk-tee-VEE-toh,"Pago en efectivito|No tengo efectivito|Solo efectivito",Dinero en efectivo en forma cariñosa,expression,3,card_efectivito
+112,precio,preciosito,costo de algo,preh-see-oh-SEE-toh,"Qué preciosito tan bueno|Preciosito justo|Preciosito cómodo",Precio accesible o conveniente,expression,2,card_preciosito
+113,caro,carito,precio elevado,kah-REE-toh,"Está carito|Un poquito carito|Muy carito",Precio algo elevado en forma suave,expression,2,card_carito
+114,barato,baratito,precio bajo,bah-rah-TEE-toh,"Está baratito|Precio baratito|Muy baratito",Precio económico en forma cariñosa,expression,1,card_baratito
+115,compra,comprita,adquisición,kohm-PREE-tah,"Hice una comprita|Comprita del mercado|Buena comprita",Compra pequeña o en forma cariñosa,expression,1,card_comprita
+116,venta,ventita,transacción comercial,vehn-TEE-tah,"Hice una ventita|Ventita rápida|Buena ventita",Venta pequeña o en forma cariñosa,expression,2,card_ventita
+117,negocio,negocito,empresa pequeña,neh-goh-SEE-toh,"Mi negocito va bien|Negocito familiar|Negocito próspero",Negocio pequeño o en forma cariñosa,expression,2,card_negocito
+118,tienda,tiendita,establecimiento comercial,tee-ehn-DEE-tah,"Voy a la tiendita|La tiendita está abierta|Compré en la tiendita",Tienda pequeña del barrio,expression,1,card_tiendita
+119,mercado,mercadito,lugar de compras,mehr-kah-DEE-toh,"Voy al mercadito|El mercadito está lleno|Compras del mercadito",Mercado pequeño o en forma cariñosa,expression,2,card_mercadito
+120,supermercado,super,establecimiento grande,SOO-pehr,"Voy al super|El super está cerrado|Compras del super",Supermercado abreviado,expression,1,card_super
+121,centro comercial,mall,complejo comercial,MAHL,"Vamos al mall|El mall está lleno|Tiendas del mall",Centro comercial moderno,expression,2,card_mall
+122,restaurante,restaurancito,lugar de comida,rehs-tah-oo-rahn-SEE-toh,"Vamos al restaurancito|El restaurancito está bueno|Cené en el restaurancito",Restaurante pequeño o acogedor,expression,3,card_restaurancito
+123,café,cafecito,establecimiento de café,kah-feh-SEE-toh,"Vamos al cafecito|El cafecito está abierto|Me gusta ese cafecito",Café pequeño o acogedor,expression,2,card_cafecito
+124,bar,barecito,establecimiento de bebidas,bah-reh-SEE-toh,"Vamos al barecito|El barecito está lleno|Música en el barecito",Bar pequeño o íntimo,expression,3,card_barecito
+125,discoteca,disco,lugar de baile,DEES-koh,"Vamos a la disco|La disco está buena|Bailé en la disco",Discoteca abreviado,expression,2,card_disco
+126,cine,cinecito,sala de películas,see-neh-SEE-toh,"Vamos al cinecito|El cinecito está cerca|Película en el cinecito",Cine pequeño o acogedor,expression,2,card_cinecito
+127,teatro,teatrito,sala de espectáculos,teh-ah-TREE-toh,"Vamos al teatrito|El teatrito está lleno|Obra en el teatrito",Teatro pequeño o íntimo,expression,3,card_teatrito
+128,parque,parquecito,área verde,pahr-keh-SEE-toh,"Vamos al parquecito|El parquecito está lindo|Jugando en el parquecito",Parque pequeño o acogedor,expression,1,card_parquecito
+129,plaza,placita,espacio público,plah-SEE-tah,"Vamos a la placita|La placita está bonita|Gente en la placita",Plaza pequeña del pueblo,expression,1,card_placita
+130,iglesia,iglesita,templo religioso,ee-gleh-SEE-tah,"Voy a la iglesita|La iglesita está abierta|Misa en la iglesita",Iglesia pequeña o querida,expression,2,card_iglesita
+131,escuela,escuelita,centro educativo,ehs-kweh-LEE-tah,"Voy a la escuelita|La escuelita está cerrada|Niños de la escuelita",Escuela pequeña o primaria,expression,1,card_escuelita
+132,biblioteca,bibliotequita,lugar de libros,bee-blee-oh-teh-KEE-tah,"Voy a la bibliotequita|La bibliotequita está abierta|Estudiando en la bibliotequita",Biblioteca pequeña o acogedora,expression,4,card_bibliotequita
+133,oficina,oficinita,lugar de trabajo,oh-fee-see-NEE-tah,"Voy a mi oficinita|La oficinita está ordenada|Trabajando en la oficinita",Oficina pequeña o personal,expression,2,card_oficinita
+134,empresa,empresita,organización comercial,ehm-preh-SEE-tah,"Mi empresita va bien|Empresita familiar|Empresita próspera",Empresa pequeña o en crecimiento,expression,3,card_empresita
+135,fábrica,fabriquita,lugar de producción,fah-bree-KEE-tah,"Trabajo en la fabriquita|La fabriquita está cerrada|Productos de la fabriquita",Fábrica pequeña o local,expression,3,card_fabriquita
+136,taller,tallercito,lugar de reparaciones,tah-yehr-SEE-toh,"Voy al tallercito|El tallercito está abierto|Arreglé en el tallercito",Taller pequeño o familiar,expression,2,card_tallercito
+137,peluquería,peluqueriita,salón de belleza,peh-loo-keh-REE-tah,"Voy a la peluqueriita|La peluqueriita está llena|Me cortaron en la peluqueriita",Peluquería pequeña o de barrio,expression,4,card_peluqueriita
+138,farmacia,botica,establecimiento médico,BOH-tee-kah,"Voy a la botica|La botica está abierta|Medicinas de la botica",Forma tradicional de decir farmacia,expression,3,card_botica
+139,gasolinera,bomba,estación de combustible,BOHM-bah,"Voy a la bomba|La bomba está cerrada|Eché gasolina en la bomba",Estación de servicio en Venezuela,expression,2,card_bomba
+140,mecánico,mecánico,reparador de autos,meh-KAH-nee-koh,"El mecánico revisó el carro|Buen mecánico|Mecánico de confianza",Profesional que repara vehículos,expression,2,card_mecanico
+141,electricista,electricista,profesional eléctrico,eh-lehk-tree-SEES-tah,"El electricista arregló la luz|Llamé al electricista|Electricista de confianza",Profesional de instalaciones eléctricas,expression,3,card_electricista
+142,plomero,plomero,profesional de tuberías,ploh-MEH-roh,"El plomero arregló la tubería|Llamé al plomero|Plomero bueno",Profesional de instalaciones de agua,expression,2,card_plomero
+143,carpintero,carpintero,profesional de madera,kahr-peen-TEH-roh,"El carpintero hizo la mesa|Buen carpintero|Carpintero hábil",Profesional que trabaja la madera,expression,3,card_carpintero
+144,pintor,pintor,profesional de pintura,peen-TOHR,"El pintor pintó la casa|Buen pintor|Pintor profesional",Profesional que pinta casas y edificios,expression,2,card_pintor
+145,jardinero,jardinero,cuidador de jardines,hahr-dee-NEH-roh,"El jardinero cortó el césped|Jardinero trabajador|Jardinero del parque",Profesional que cuida jardines,expression,3,card_jardinero
+146,cocinero,cocinero,profesional culinario,koh-see-NEH-roh,"El cocinero prepara rico|Cocinero profesional|Cocinero del restaurante",Profesional de la cocina,expression,2,card_cocinero
+147,mesero,mesonero,trabajador de restaurante,meh-soh-NEH-roh,"El mesonero nos atendió|Buen mesonero|Mesonero amable",Camarero en Venezuela,expression,2,card_mesonero
+148,cajero,cajero,empleado de caja,kah-HEH-roh,"El cajero me cobró|Cajero rápido|Cajero del banco",Empleado que maneja dinero,expression,2,card_cajero2
+149,vendedor,vendedor,comerciante,vehn-deh-DOHR,"El vendedor me atendió|Buen vendedor|Vendedor honesto",Persona que vende productos,expression,2,card_vendedor
+150,comprador,comprador,cliente,kohm-prah-DOHR,"El comprador pagó|Buen comprador|Comprador frecuente",Persona que compra productos,expression,2,card_comprador
+151,vecino,vecino,habitante cercano,veh-SEE-noh,"Mi vecino es bueno|Vecino amable|Vecino del lado",Persona que vive cerca,expression,1,card_vecino
+152,amigo,pana,compañero cercano,PAH-nah,"Mi pana del alma|Pana de toda la vida|Pana querido",Amigo muy cercano y querido,expression,1,card_pana2
+153,hermano,hermano,familiar consanguíneo,ehr-MAH-noh,"Mi hermano menor|Hermano querido|Hermano mayor",Familiar directo,expression,1,card_hermano
+154,hermana,hermana,familiar consanguínea,ehr-MAH-nah,"Mi hermana linda|Hermana querida|Hermana mayor",Familiar directo femenino,expression,1,card_hermana
+155,padre,papá,progenitor masculino,pah-PAH,"Mi papá trabajador|Papá querido|Papá responsable",Padre en forma cariñosa,expression,1,card_papa
+156,madre,mamá,progenitora femenina,mah-MAH,"Mi mamá linda|Mamá querida|Mamá cariñosa",Madre en forma cariñosa,expression,1,card_mama
+157,hijo,hijo,descendiente masculino,EE-hoh,"Mi hijo querido|Hijo obediente|Hijo responsable",Descendiente varón,expression,1,card_hijo
+158,hija,hija,descendiente femenina,EE-hah,"Mi hija linda|Hija querida|Hija responsable",Descendiente mujer,expression,1,card_hija
+159,abuelo,abuelo,progenitor del padre o madre,ah-BWEH-loh,"Mi abuelo sabio|Abuelo querido|Abuelo cariñoso",Padre del padre o madre,expression,1,card_abuelo
+160,abuela,abuela,progenitora del padre o madre,ah-BWEH-lah,"Mi abuela linda|Abuela querida|Abuela cocinera",Madre del padre o madre,expression,1,card_abuela
+161,tío,tío,hermano del padre o madre,TEE-oh,"Mi tío bueno|Tío querido|Tío divertido",Hermano de los padres,expression,1,card_tio
+162,tía,tía,hermana del padre o madre,TEE-ah,"Mi tía linda|Tía querida|Tía cariñosa",Hermana de los padres,expression,1,card_tia
+163,primo,primo,hijo del tío o tía,PREE-moh,"Mi primo favorito|Primo querido|Primo divertido",Hijo de los tíos,expression,1,card_primo
+164,prima,prima,hija del tío o tía,PREE-mah,"Mi prima linda|Prima querida|Prima divertida",Hija de los tíos,expression,1,card_prima
+165,sobrino,sobrino,hijo del hermano o hermana,soh-BREE-noh,"Mi sobrino travieso|Sobrino querido|Sobrino inteligente",Hijo de los hermanos,expression,2,card_sobrino
+166,sobrina,sobrina,hija del hermano o hermana,soh-BREE-nah,"Mi sobrina linda|Sobrina querida|Sobrina inteligente",Hija de los hermanos,expression,2,card_sobrina
+167,nieto,nieto,hijo del hijo o hija,nee-EH-toh,"Mi nieto querido|Nieto travieso|Nieto inteligente",Hijo de los hijos,expression,2,card_nieto
+168,nieta,nieta,hija del hijo o hija,nee-EH-tah,"Mi nieta linda|Nieta querida|Nieta inteligente",Hija de los hijos,expression,2,card_nieta
+169,esposo,esposo,cónyuge masculino,ehs-POH-soh,"Mi esposo querido|Esposo trabajador|Esposo cariñoso",Marido o cónyuge,expression,1,card_esposo
+170,esposa,esposa,cónyuge femenina,ehs-POH-sah,"Mi esposa linda|Esposa querida|Esposa cariñosa",Mujer o cónyuge,expression,1,card_esposa
+171,novio,novio,pareja masculina,NOH-vee-oh,"Mi novio guapo|Novio querido|Novio cariñoso",Pareja sentimental masculina,expression,1,card_novio
+172,novia,novia,pareja femenina,NOH-vee-ah,"Mi novia linda|Novia querida|Novia cariñosa",Pareja sentimental femenina,expression,1,card_novia
+173,bebé,bebé,niño muy pequeño,beh-BEH,"El bebé está durmiendo|Bebé hermoso|Bebé tranquilo",Niño recién nacido o muy pequeño,expression,1,card_bebe
+174,niño,niño,menor de edad,NEE-nyoh,"El niño está jugando|Niño travieso|Niño inteligente",Menor de edad masculino,expression,1,card_nino
+175,niña,niña,menor de edad femenina,NEE-nyah,"La niña está jugando|Niña linda|Niña inteligente",Menor de edad femenina,expression,1,card_nina
+176,joven,joven,persona de poca edad,HOH-vehn,"El joven estudia|Joven trabajador|Joven responsable",Persona en la juventud,expression,1,card_joven
+177,adulto,adulto,persona madura,ah-DOOL-toh,"El adulto trabaja|Adulto responsable|Adulto maduro",Persona en edad madura,expression,1,card_adulto
+178,anciano,anciano,persona de edad avanzada,ahn-see-AH-noh,"El anciano descansa|Anciano sabio|Anciano respetado",Persona de tercera edad,expression,2,card_anciano
+179,hombre,hombre,persona masculina,OHM-breh,"El hombre trabaja|Hombre bueno|Hombre honesto",Persona del sexo masculino,expression,1,card_hombre
+180,mujer,mujer,persona femenina,moo-HEHR,"La mujer trabaja|Mujer buena|Mujer honesta",Persona del sexo femenino,expression,1,card_mujer
+181,persona,persona,ser humano,pehr-SOH-nah,"Esa persona es buena|Persona amable|Persona honesta",Ser humano en general,expression,1,card_persona
+182,gente,gente,conjunto de personas,HEHN-teh,"La gente está contenta|Gente amable|Gente trabajadora",Conjunto de personas,expression,1,card_gente
+183,familia,familia,grupo familiar,fah-MEE-lee-ah,"Mi familia querida|Familia unida|Familia feliz",Grupo de familiares,expression,1,card_familia
+184,casa,casa,vivienda,KAH-sah,"Mi casa bonita|Casa cómoda|Casa familiar",Lugar donde se vive,expression,1,card_casa
+185,hogar,hogar,lugar del corazón,oh-GAHR,"Mi hogar dulce|Hogar feliz|Hogar acogedor",Casa vista con cariño,expression,1,card_hogar
+186,cuarto,cuarto,habitación,KWAHR-toh,"Mi cuarto ordenado|Cuarto cómodo|Cuarto bonito",Habitación de la casa,expression,1,card_cuarto
+187,sala,sala,área de estar,SAH-lah,"La sala está linda|Sala cómoda|Sala familiar",Área principal de la casa,expression,1,card_sala
+188,cocina,cocina,área de preparar comida,koh-SEE-nah,"La cocina está limpia|Cocina equipada|Cocina moderna",Lugar donde se cocina,expression,1,card_cocina
+189,baño,baño,área de aseo,BAH-nyoh,"El baño está limpio|Baño cómodo|Baño moderno",Lugar de aseo personal,expression,1,card_bano
+190,jardín,jardín,área verde,hahr-DEEN,"El jardín está bonito|Jardín florido|Jardín cuidado",Área verde de la casa,expression,1,card_jardin
+191,patio,patio,área exterior,PAH-tee-oh,"El patio está limpio|Patio grande|Patio familiar",Área exterior de la casa,expression,1,card_patio
+192,garage,garage,lugar para el carro,gah-RAH-heh,"El garage está cerrado|Garage amplio|Garage seguro",Lugar donde se guarda el carro,expression,2,card_garage
+193,puerta,puerta,entrada de la casa,PWEHR-tah,"La puerta está abierta|Puerta segura|Puerta bonita",Entrada principal,expression,1,card_puerta
+194,ventana,ventana,abertura para luz,vehn-TAH-nah,"La ventana está abierta|Ventana grande|Ventana limpia",Abertura para entrada de luz,expression,1,card_ventana
+195,techo,techo,parte superior,TEH-choh,"El techo está bueno|Techo sólido|Techo reparado",Parte superior de la casa,expression,1,card_techo
+196,piso,piso,parte inferior,PEE-soh,"El piso está limpio|Piso bonito|Piso brillante",Superficie donde se camina,expression,1,card_piso
+197,pared,pared,división vertical,pah-REHD,"La pared está pintada|Pared sólida|Pared decorada",División vertical de los espacios,expression,1,card_pared
+198,luz,luz,iluminación,LOOS,"La luz está encendida|Luz brillante|Luz natural",Iluminación del hogar,expression,1,card_luz
+199,agua,agua,líquido vital,AH-gwah,"El agua está fría|Agua limpia|Agua fresca",Líquido esencial para la vida,expression,1,card_agua
+200,aire,aire,elemento gaseoso,AH-ee-reh,"El aire está fresco|Aire puro|Aire limpio",Elemento que respiramos,expression,1,card_aire

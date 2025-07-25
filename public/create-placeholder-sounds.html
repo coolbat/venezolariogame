@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generador de Sonidos Placeholder</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        button { margin: 10px; padding: 10px; }
+        .info { color: #666; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h1>🎵 Generador de Sonidos para Venezolario</h1>
+    <p class="info">Esta página genera archivos de audio placeholder para el juego.</p>
+    
+    <button onclick="generateAllSounds()">🎨 Generar Todos los Sonidos</button>
+    <button onclick="generateBackgroundMusic()">🎵 Generar Música de Fondo</button>
+    
+    <div id="status"></div>
+    
+    <script>
+        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        
+        function updateStatus(message) {
+            document.getElementById('status').innerHTML += '<div>' + message + '</div>';
+        }
+        
+        // Generar un tono simple
+        function generateTone(frequency, duration, volume = 0.3) {
+            const sampleRate = audioContext.sampleRate;
+            const buffer = audioContext.createBuffer(1, duration * sampleRate, sampleRate);
+            const data = buffer.getChannelData(0);
+            
+            for (let i = 0; i < buffer.length; i++) {
+                const t = i / sampleRate;
+                data[i] = Math.sin(2 * Math.PI * frequency * t) * Math.exp(-t * 2) * volume;
+            }
+            
+            return buffer;
+        }
+        
+        // Generar música de fondo simple
+        function generateBackgroundMusicBuffer() {
+            const duration = 30; // 30 segundos, se repetirá
+            const sampleRate = audioContext.sampleRate;
+            const buffer = audioContext.createBuffer(2, duration * sampleRate, sampleRate);
+            
+            // Progresión de acordes simple en Do Mayor
+            const chords = [
+                [261.63, 329.63, 392.00], // C Mayor
+                [293.66, 369.99, 440.00], // D menor  
+                [329.63, 415.30, 493.88], // E menor
+                [349.23, 440.00, 523.25], // F Mayor
+                [392.00, 493.88, 587.33], // G Mayor
+                [440.00, 554.37, 659.25], // A menor
+                [493.88, 622.25, 739.99], // B disminuido
+                [523.25, 659.25, 783.99]  // C Mayor
+            ];
+            
+            for (let channel = 0; channel < 2; channel++) {
+                const channelData = buffer.getChannelData(channel);
+                
+                for (let i = 0; i < buffer.length; i++) {
+                    const t = i / sampleRate;
+                    const chordIndex = Math.floor((t % (duration * 0.8)) / (duration * 0.1)) % chords.length;
+                    const chord = chords[chordIndex];
+                    
+                    let sample = 0;
+                    chord.forEach((freq, idx) => {
+                        const volume = 0.05 * (1 - idx * 0.2); // Volumen decreciente por nota
+                        sample += Math.sin(2 * Math.PI * freq * t) * volume;
+                    });
+                    
+                    // Agregar un poco de reverb simple
+                    if (i > sampleRate * 0.1) {
+                        sample += channelData[i - Math.floor(sampleRate * 0.1)] * 0.2;
+                    }
+                    
+                    channelData[i] = sample * (0.5 + 0.5 * Math.sin(t * 0.5)); // Modulación suave
+                }
+            }
+            
+            return buffer;
+        }
+        
+        // Convertir AudioBuffer a WAV
+        function audioBufferToWav(buffer) {
+            const length = buffer.length;
+            const numberOfChannels = buffer.numberOfChannels;
+            const sampleRate = buffer.sampleRate;
+            const bytesPerSample = 2;
+            const blockAlign = numberOfChannels * bytesPerSample;
+            const byteRate = sampleRate * blockAlign;
+            const dataSize = length * blockAlign;
+            const bufferSize = 44 + dataSize;
+            
+            const arrayBuffer = new ArrayBuffer(bufferSize);
+            const view = new DataView(arrayBuffer);
+            
+            // WAV header
+            const writeString = (offset, string) => {
+                for (let i = 0; i < string.length; i++) {
+                    view.setUint8(offset + i, string.charCodeAt(i));
+                }
+            };
+            
+            writeString(0, 'RIFF');
+            view.setUint32(4, bufferSize - 8, true);
+            writeString(8, 'WAVE');
+            writeString(12, 'fmt ');
+            view.setUint32(16, 16, true);
+            view.setUint16(20, 1, true);
+            view.setUint16(22, numberOfChannels, true);
+            view.setUint32(24, sampleRate, true);
+            view.setUint32(28, byteRate, true);
+            view.setUint16(32, blockAlign, true);
+            view.setUint16(34, bytesPerSample * 8, true);
+            writeString(36, 'data');
+            view.setUint32(40, dataSize, true);
+            
+            // PCM data
+            let offset = 44;
+            for (let i = 0; i < length; i++) {
+                for (let channel = 0; channel < numberOfChannels; channel++) {
+                    const sample = Math.max(-1, Math.min(1, buffer.getChannelData(channel)[i]));
+                    view.setInt16(offset, sample * 0x7FFF, true);
+                    offset += 2;
+                }
+            }
+            
+            return arrayBuffer;
+        }
+        
+        // Descargar archivo
+        function downloadFile(arrayBuffer, filename) {
+            const blob = new Blob([arrayBuffer], { type: 'audio/wav' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+        
+        function generateBackgroundMusic() {
+            updateStatus('🎵 Generando música de fondo...');
+            const buffer = generateBackgroundMusicBuffer();
+            const wav = audioBufferToWav(buffer);
+            downloadFile(wav, 'background-music.wav');
+            updateStatus('✅ Música de fondo generada: background-music.wav');
+        }
+        
+        function generateAllSounds() {
+            updateStatus('🎨 Generando todos los sonidos...');
+            
+            // Generar sonidos básicos
+            const sounds = [
+                { name: 'click.wav', buffer: generateTone(800, 0.1, 0.3) },
+                { name: 'correct.wav', buffer: generateTone(523, 0.5, 0.4) },
+                { name: 'incorrect.wav', buffer: generateTone(200, 0.3, 0.3) },
+                { name: 'hint.wav', buffer: generateTone(440, 0.2, 0.2) },
+                { name: 'level_up.wav', buffer: generateTone(523, 1.0, 0.3) },
+                { name: 'unlock.wav', buffer: generateTone(880, 0.6, 0.3) },
+                { name: 'card_flip.wav', buffer: generateTone(600, 0.15, 0.4) }
+            ];
+            
+            sounds.forEach(sound => {
+                const wav = audioBufferToWav(sound.buffer);
+                downloadFile(wav, sound.name);
+                updateStatus('✅ Generado: ' + sound.name);
+            });
+            
+            updateStatus('🎉 Todos los sonidos generados!');
+        }
+    </script>
+</body>
+</html>

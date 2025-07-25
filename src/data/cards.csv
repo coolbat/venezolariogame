@@ -1,0 +1,201 @@
+id,title,description,type,rarity,wordId,unlocked
+card_chamo,Chamo,Una de las palabras más icónicas del venezolano,expression,common,1,false
+card_cambur,Cambur,Término venezolano para el plátano dulce,food,common,2,false
+card_pana,Pana,Mi amigo del alma - compañero de vida,expression,common,3,false
+card_real,Real,El dinero que tanto necesitamos,expression,rare,4,false
+card_rancho,Rancho,El hogar humilde pero lleno de amor,expression,rare,5,false
+card_carrito,Carrito,El transporte del pueblo venezolano,expression,common,6,false
+card_chambear,Chambear,El espíritu trabajador venezolano,expression,rare,7,false
+card_jama,Jama,La deliciosa comida criolla,food,common,8,false
+card_birra,Birra,La cerveza que refresca el alma,food,common,9,false
+card_peo,Peo,Los problemas de la vida diaria,expression,rare,10,false
+card_rumba,Rumba,La fiesta que alegra el corazón,expression,epic,11,false
+card_jevo,Jevo,El amor masculino venezolano,expression,rare,12,false
+card_jeva,Jeva,El amor femenino venezolano,expression,rare,13,false
+card_jalado,Jalado,El estado de celebración extrema,expression,epic,14,false
+card_embuste,Embuste,Las mentiras que todos contamos,expression,legendary,15,false
+card_cacharro,Cacharro,El carro que nos lleva a todos lados,expression,common,16,false
+card_tipo,Tipo,La gente que conocemos en el camino,expression,common,17,false
+card_guebon,Güebona,La mujer del pueblo venezolano,expression,rare,18,false
+card_carajito,Carajito,Los niños traviesos del barrio,expression,common,19,false
+card_carcaman,Carcamán,La sabiduría de los mayores,expression,rare,20,false
+card_arrecho,Arrecho,La expresión de máxima emoción,expression,legendary,21,false
+card_volao,Volao,La velocidad de la vida moderna,expression,rare,22,false
+card_guevon,Güevón,La burla cariñosa entre amigos,expression,common,23,false
+card_chevere,Chévere,La alegría pura venezolana,expression,common,24,false
+card_ladilla,Ladilla,Las molestias del día a día,expression,common,25,false
+card_burda,Burda,El intensificador por excelencia,expression,rare,26,false
+card_chiquito,Chiquito,Todo lo pequeño y tierno,expression,common,27,false
+card_ladilloso,Ladilloso,El fastidio constante,expression,rare,28,false
+card_chueco,Chueco,Lo que sale mal en la vida,expression,common,29,false
+card_melcocha,Melcocha,El dulce tradicional criollo,food,common,30,false
+card_fresquito,Fresquito,La bebida que calma la sed,food,common,31,false
+card_canilla,Canilla,El pan de cada día,food,common,32,false
+card_marron,Marrón,El café con leche matutino,food,common,33,false
+card_palta,Palta,El aguacate nutritivo,food,rare,34,false
+card_pepito,Pepito,El sandwich más sabroso,food,common,35,false
+card_friofrio,Frío Frío,Los helados del verano,food,common,36,false
+card_guarapo,Guarapo,La bebida dulce de caña,food,rare,37,false
+card_bistec,Bistec,La carne jugosa a la plancha,food,common,38,false
+card_pollito,Pollito,El pollo tierno y sabroso,food,common,39,false
+card_mojarra,Mojarra,El pescado fresco del mar,food,rare,40,false
+card_cotiza,Cotiza,Los zapatos de todos los días,expression,common,41,false
+card_franela,Franela,La camiseta cómoda,expression,common,42,false
+card_bluejean,Blue Jean,Los pantalones de moda,expression,common,43,false
+card_plata,Plata,El dinero para los gastos,expression,common,44,false
+card_chamba,Chamba,El trabajo que nos sustenta,expression,common,45,false
+card_boss,Boss,El jefe que todos conocemos,expression,common,46,false
+card_patrulla,Patrulla,La autoridad en las calles,expression,rare,47,false
+card_clinica,Clínica,El lugar donde nos curan,expression,common,48,false
+card_liceo,Liceo,La escuela de la juventud,expression,common,49,false
+card_uni,Uni,Los estudios superiores,expression,common,50,false
+card_doctor,Doctor,El profesional de la salud,expression,common,51,false
+card_nurse,Nurse,La enfermera cariñosa,expression,rare,52,false
+card_maestro,Maestro,El educador respetado,expression,common,53,false
+card_chamito,Chamito,Los estudiantes aplicados,expression,common,54,false
+card_musica,Música,El arte que mueve el alma,expression,common,55,false
+card_perreo,Perreo,El baile que seduce,expression,epic,56,false
+card_vocalista,Vocalista,La voz que nos emociona,expression,rare,57,false
+card_cuatro,Cuatro,El instrumento del corazón,expression,rare,58,false
+card_tambora,Tambora,El ritmo ancestral,expression,rare,59,false
+card_tema,Tema,La canción que nos gusta,expression,common,60,false
+card_emisora,Emisora,La radio que nos acompaña,expression,common,61,false
+card_tv,TV,La ventana al mundo,expression,common,62,false
+card_cel,Cel,El teléfono de bolsillo,expression,common,63,false
+card_compu,Compu,La computadora personal,expression,common,64,false
+card_web,Web,El internet infinito,expression,common,65,false
+card_texto,Texto,Los mensajes cortos,expression,common,66,false
+card_selfie,Selfie,El autorretrato moderno,expression,common,67,false
+card_clip,Clip,Los videos virales,expression,common,68,false
+card_bici,Bici,El transporte ecológico,expression,common,69,false
+card_moto,Moto,La velocidad sobre ruedas,expression,common,70,false
+card_bus,Bus,El transporte masivo,expression,common,71,false
+card_taxi,Taxi,El servicio puerta a puerta,expression,common,72,false
+card_jet,Jet,El avión de lujo,expression,rare,73,false
+card_lancha,Lancha,La embarcación costera,expression,common,74,false
+card_playita,Playita,La playa hermosa,expression,common,75,false
+card_marecito,Marecito,El mar cariñoso,expression,common,76,false
+card_solcito,Solcito,El sol que nos broncea,expression,common,77,false
+card_aguacero,Aguacero,La lluvia tropical,expression,common,78,false
+card_brisa,Brisa,El viento refrescante,expression,common,79,false
+card_calor,Calor,El clima que nos caracteriza,expression,common,80,false
+card_fresquito2,Fresquito,La temperatura agradable,expression,common,81,false
+card_nochecita,Nochecita,La noche romántica,expression,common,82,false
+card_diita,Diita,El día perfecto,expression,common,83,false
+card_semanita,Semanita,Los siete días,expression,common,84,false
+card_mesecito,Mesecito,El tiempo que pasa,expression,common,85,false
+card_anito,Añito,El año que vivimos,expression,common,86,false
+card_cumple,Cumple,La celebración especial,expression,common,87,false
+card_regalito,Regalito,El obsequio del corazón,expression,common,88,false
+card_sorpresita,Sorpresita,La alegría inesperada,expression,common,89,false
+card_besito,Besito,El cariño en los labios,expression,common,90,false
+card_abracito,Abracito,El calor humano,expression,common,91,false
+card_sonrisita,Sonrisita,La felicidad visible,expression,common,92,false
+card_contento,Contento,La alegría del alma,expression,common,93,false
+card_triston,Tristón,La melancolía pasajera,expression,common,94,false
+card_bravo,Bravo,El enojo momentáneo,expression,common,95,false
+card_cansadito,Cansadito,El agotamiento natural,expression,common,96,false
+card_durmiendo,Durmiendo,El descanso reparador,expression,common,97,false
+card_despiertito,Despiertito,La vigilia activa,expression,common,98,false
+card_hambrecita,Hambrecita,El apetito despertando,expression,common,99,false
+card_sedecita,Sedecita,La necesidad de beber,expression,common,100,false
+card_dolorcito,Dolorcito,La molestia menor,expression,common,101,false
+card_saludicita,Saludcita,El bienestar corporal,expression,rare,102,false
+card_enfermito,Enfermito,El malestar temporal,expression,common,103,false
+card_pastillita,Pastillita,La medicina curativa,expression,common,104,false
+card_doctorcito,Doctorcito,El médico de confianza,expression,common,105,false
+card_hospitalito,Hospitalito,El centro de sanación,expression,rare,106,false
+card_farmaciita,Farmaciita,La botica del barrio,expression,rare,107,false
+card_platita,Platita,El dinero escaso,expression,common,108,false
+card_banquito,Banquito,La institución financiera,expression,common,109,false
+card_tarjetita,Tarjetita,El plástico mágico,expression,common,110,false
+card_efectivito,Efectivito,El dinero contante,expression,rare,111,false
+card_preciosito,Preciosito,El costo justo,expression,common,112,false
+card_carito,Carito,Lo que cuesta mucho,expression,common,113,false
+card_baratito,Baratito,La ganga del día,expression,common,114,false
+card_comprita,Comprita,La adquisición necesaria,expression,common,115,false
+card_ventita,Ventita,La transacción exitosa,expression,common,116,false
+card_negocito,Negocito,El emprendimiento familiar,expression,common,117,false
+card_tiendita,Tiendita,El comercio del barrio,expression,common,118,false
+card_mercadito,Mercadito,El centro de compras,expression,common,119,false
+card_super,Super,El mercado grande,expression,common,120,false
+card_mall,Mall,El centro comercial moderno,expression,common,121,false
+card_restaurancito,Restaurancito,El lugar de buena comida,expression,rare,122,false
+card_cafecito,Cafecito,El rincón del café,expression,common,123,false
+card_barecito,Barecito,El lugar de encuentro,expression,rare,124,false
+card_disco,Disco,La pista de baile,expression,common,125,false
+card_cinecito,Cinecito,La sala de cine,expression,common,126,false
+card_teatrito,Teatrito,El escenario cultural,expression,rare,127,false
+card_parquecito,Parquecito,El área verde,expression,common,128,false
+card_placita,Placita,El corazón del pueblo,expression,common,129,false
+card_iglesita,Iglesita,El templo espiritual,expression,common,130,false
+card_escuelita,Escuelita,El lugar de aprendizaje,expression,common,131,false
+card_bibliotequita,Bibliotequita,El templo del saber,expression,epic,132,false
+card_oficinita,Oficinita,El lugar de trabajo,expression,common,133,false
+card_empresita,Empresita,El negocio próspero,expression,rare,134,false
+card_fabriquita,Fabriquita,El centro de producción,expression,rare,135,false
+card_tallercito,Tallercito,El lugar de reparación,expression,common,136,false
+card_peluqueriita,Peluqueriita,El salón de belleza,expression,epic,137,false
+card_botica,Botica,La farmacia tradicional,expression,rare,138,false
+card_bomba,Bomba,La gasolinera del barrio,expression,common,139,false
+card_mecanico,Mecánico,El reparador de confianza,expression,common,140,false
+card_electricista,Electricista,El experto en electricidad,expression,rare,141,false
+card_plomero,Plomero,El arreglador de tuberías,expression,common,142,false
+card_carpintero,Carpintero,El artesano de la madera,expression,rare,143,false
+card_pintor,Pintor,El artista de paredes,expression,common,144,false
+card_jardinero,Jardinero,El cuidador de plantas,expression,rare,145,false
+card_cocinero,Cocinero,El chef del sabor,expression,common,146,false
+card_mesonero,Mesonero,El servidor amable,expression,common,147,false
+card_cajero2,Cajero,El cobrador eficiente,expression,common,148,false
+card_vendedor,Vendedor,El comerciante honesto,expression,common,149,false
+card_comprador,Comprador,El cliente satisfecho,expression,common,150,false
+card_vecino,Vecino,El habitante cercano,expression,common,151,false
+card_pana2,Pana del Alma,El amigo verdadero,expression,rare,152,false
+card_hermano,Hermano,El familiar querido,expression,common,153,false
+card_hermana,Hermana,La familiar querida,expression,common,154,false
+card_papa,Papá,El padre protector,expression,common,155,false
+card_mama,Mamá,La madre amorosa,expression,common,156,false
+card_hijo,Hijo,El descendiente varón,expression,common,157,false
+card_hija,Hija,La descendiente mujer,expression,common,158,false
+card_abuelo,Abuelo,El patriarca sabio,expression,common,159,false
+card_abuela,Abuela,La matriarca cariñosa,expression,common,160,false
+card_tio,Tío,El hermano de los padres,expression,common,161,false
+card_tia,Tía,La hermana de los padres,expression,common,162,false
+card_primo,Primo,El hijo de los tíos,expression,common,163,false
+card_prima,Prima,La hija de los tíos,expression,common,164,false
+card_sobrino,Sobrino,El hijo de los hermanos,expression,common,165,false
+card_sobrina,Sobrina,La hija de los hermanos,expression,common,166,false
+card_nieto,Nieto,El hijo de los hijos,expression,common,167,false
+card_nieta,Nieta,La hija de los hijos,expression,common,168,false
+card_esposo,Esposo,El compañero de vida,expression,common,169,false
+card_esposa,Esposa,La compañera de vida,expression,common,170,false
+card_novio,Novio,El galán del corazón,expression,common,171,false
+card_novia,Novia,La dama del corazón,expression,common,172,false
+card_bebe,Bebé,El angelito pequeño,expression,common,173,false
+card_nino,Niño,El pequeño travieso,expression,common,174,false
+card_nina,Niña,La pequeña dulce,expression,common,175,false
+card_joven,Joven,La persona en flor,expression,common,176,false
+card_adulto,Adulto,La persona madura,expression,common,177,false
+card_anciano,Anciano,La persona sabia,expression,common,178,false
+card_hombre,Hombre,El ser masculino,expression,common,179,false
+card_mujer,Mujer,El ser femenino,expression,common,180,false
+card_persona,Persona,El ser humano,expression,common,181,false
+card_gente,Gente,La humanidad unida,expression,common,182,false
+card_familia,Familia,El núcleo del amor,expression,common,183,false
+card_casa,Casa,El lugar de residencia,expression,common,184,false
+card_hogar,Hogar,El nido del corazón,expression,common,185,false
+card_cuarto,Cuarto,El espacio personal,expression,common,186,false
+card_sala,Sala,El área de convivencia,expression,common,187,false
+card_cocina,Cocina,El laboratorio culinario,expression,common,188,false
+card_bano,Baño,El lugar de aseo,expression,common,189,false
+card_jardin,Jardín,El paraíso verde,expression,common,190,false
+card_patio,Patio,El espacio exterior,expression,common,191,false
+card_garage,Garage,El refugio del carro,expression,common,192,false
+card_puerta,Puerta,La entrada al hogar,expression,common,193,false
+card_ventana,Ventana,La vista al mundo,expression,common,194,false
+card_techo,Techo,La protección superior,expression,common,195,false
+card_piso,Piso,La base sólida,expression,common,196,false
+card_pared,Pared,La división del espacio,expression,common,197,false
+card_luz,Luz,La iluminación vital,expression,common,198,false
+card_agua,Agua,El líquido de la vida,expression,common,199,false
+card_aire,Aire,El elemento respiratorio,expression,common,200,false
