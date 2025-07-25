@@ -1,0 +1,147 @@
+# Venezolario - 委内瑞拉俚语猜词游戏 .gitignore
+# 此文件定义了哪些文件和文件夹不应该被Git跟踪和上传
+
+# ===================================
+# Node.js 相关文件 (不上传)
+# ===================================
+# 依赖包文件夹 - 通过package.json自动安装，不需要上传
+node_modules/
+# npm调试日志
+npm-debug.log*
+# Yarn调试日志  
+yarn-debug.log*
+yarn-error.log*
+# pnpm相关
+pnpm-debug.log*
+# 锁定文件冲突解决
+.pnpm-debug.log*
+
+# ===================================  
+# Next.js 相关文件 (不上传)
+# ===================================
+# Next.js构建输出目录
+.next/
+# Next.js静态导出目录
+out/
+# Next.js缓存
+.next/cache/
+
+# ===================================
+# 构建和编译文件 (不上传) 
+# ===================================
+# 生产环境构建输出
+build/
+dist/
+# TypeScript编译输出
+*.tsbuildinfo
+# TypeScript增量编译信息
+.tsbuildinfo
+next-env.d.ts
+
+# ===================================
+# 环境变量和配置文件 (不上传)
+# ===================================
+# 本地环境变量 - 包含敏感信息
+.env
+.env.local
+.env.development.local
+.env.test.local  
+.env.production.local
+
+# ===================================
+# 开发工具相关 (不上传)
+# ===================================
+# VS Code设置
+.vscode/
+# WebStorm设置
+.idea/
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ===================================
+# 测试相关 (不上传)
+# ===================================
+# 测试覆盖率报告
+coverage/
+*.lcov
+# Jest缓存
+.jest/
+
+# ===================================
+# 日志文件 (不上传)
+# ===================================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# ===================================
+# 操作系统生成文件 (不上传)
+# ===================================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Icon?
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+Desktop.ini
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ===================================
+# 临时文件和缓存 (不上传)
+# ===================================
+# 临时文件
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Vercel部署配置
+.vercel
+
+# ===================================
+# 音频文件处理 (根据需要调整)
+# ===================================
+# 如果音频文件过大，可以考虑忽略
+# 但对于演示项目，建议保留小型音频文件
+# /src/data/public/sounds/*.mp3
+# /src/data/public/sounds/*.wav
+
+# ===================================
+# 自定义忽略项
+# ===================================
+# 开发过程中的测试文件
+test-*
+temp-*
+# 备份文件
+*.bak
+*.backup
+
+# ===================================
+# 需要上传的重要文件 (确保不被忽略):
+# ===================================
+# ✅ 源代码: src/
+# ✅ 配置文件: package.json, tsconfig.json, next.config.js, tailwind.config.ts
+# ✅ 数据文件: src/data/*.csv  
+# ✅ 静态资源: public/
+# ✅ 文档文件: README*.md
+# ✅ 样式文件: src/app/globals.css, postcss.config.js
+# ✅ 类型定义: src/types/ 
