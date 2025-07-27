@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import AudioControls from '@/components/audio/AudioControls'
-import BackgroundMusic from '@/components/audio/BackgroundMusic'
+// import BackgroundMusic from '@/components/audio/BackgroundMusic'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,8 +24,8 @@ export default function RootLayout({
             {children}
           </div>
           <AudioControls />
-          {/* BackgroundMusic will handle missing files gracefully */}
-          <BackgroundMusic src="/sounds/background-music.mp3" />
+          {/* BackgroundMusic disabled to prevent file not found errors in iframe */}
+          {/* <BackgroundMusic src="/sounds/background-music.mp3" /> */}
         </div>
       </body>
     </html>
