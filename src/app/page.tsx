@@ -5,6 +5,16 @@ import { useAudioStore } from '@/stores/audioStore'
 
 export default function Home() {
   const { playSound } = useAudioStore()
+  
+  // Debug logging for iframe
+  console.log('[Debug] Home component mounted')
+  
+  const handleLinkClick = (destination: string, soundType: 'click') => {
+    console.log(`[Debug] Link clicked: ${destination}`)
+    console.log('[Debug] PlaySound function:', typeof playSound)
+    playSound(soundType)
+  }
+  
   return (
     <main className="w-full h-full px-4 py-6 flex flex-col items-center justify-center venezuela-pattern overflow-y-auto">
       <div className="text-center">
@@ -37,7 +47,7 @@ export default function Home() {
           <Link 
             href="/game" 
             className="block w-full btn-primary text-lg py-3 pulse-glow"
-            onClick={() => playSound('click')}
+            onClick={() => handleLinkClick('/game', 'click')}
           >
             🎮 Comenzar Juego
           </Link>
@@ -45,7 +55,7 @@ export default function Home() {
           <Link 
             href="/dictionary" 
             className="block w-full btn-secondary text-lg py-3"
-            onClick={() => playSound('click')}
+            onClick={() => handleLinkClick('/dictionary', 'click')}
           >
             📖 Diccionario
           </Link>
@@ -53,7 +63,7 @@ export default function Home() {
           <Link 
             href="/cards" 
             className="block w-full bg-accent-500 hover:bg-accent-600 text-white font-bold py-3 px-4 rounded-lg transition-all duration-200 transform hover:scale-105 text-lg shadow-lg hover:shadow-xl"
-            onClick={() => playSound('click')}
+            onClick={() => handleLinkClick('/cards', 'click')}
           >
             🎴 Colección de Cartas
           </Link>

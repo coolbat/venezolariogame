@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe Debug Test</title>
+    <style>
+        body {
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .test-container {
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: 1px solid #999;
+        }
+        .debug-info {
+            background: #f5f5f5;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 12px;
+        }
+        .controls {
+            margin: 10px 0;
+        }
+        button {
+            margin: 5px;
+            padding: 8px 16px;
+            background: #007cba;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005a87;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iframe Debug Test for Venezolario Game</h1>
+    
+    <div class="debug-info">
+        <strong>Debug Information:</strong><br>
+        <span id="debug-output">Ready for testing...</span>
+    </div>
+
+    <div class="controls">
+        <button onclick="reloadIframe()">Reload Iframe</button>
+        <button onclick="checkIframeContent()">Check Iframe Content</button>
+        <button onclick="testPostMessage()">Test PostMessage</button>
+        <button onclick="clearDebug()">Clear Debug</button>
+    </div>
+
+    <div class="test-container">
+        <h2>Test 1: Basic Iframe (No Sandbox)</h2>
+        <iframe id="iframe-basic" src="http://localhost:3000"></iframe>
+    </div>
+
+    <div class="test-container">
+        <h2>Test 2: Iframe with Scripts Allowed</h2>
+        <iframe id="iframe-scripts" src="http://localhost:3000" sandbox="allow-scripts allow-same-origin"></iframe>
+    </div>
+
+    <div class="test-container">
+        <h2>Test 3: Iframe with All Permissions</h2>
+        <iframe id="iframe-all" src="http://localhost:3000" sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-modals"></iframe>
+    </div>
+
+    <div class="test-container">
+        <h2>Test 4: Production URL (if available)</h2>
+        <iframe id="iframe-prod" src="https://your-app.vercel.app" sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-modals"></iframe>
+    </div>
+
+    <script>
+        function log(message) {
+            const output = document.getElementById('debug-output');
+            const timestamp = new Date().toLocaleTimeString();
+            output.innerHTML += `<br>[${timestamp}] ${message}`;
+            console.log(`[Debug] ${message}`);
+        }
+
+        function clearDebug() {
+            document.getElementById('debug-output').innerHTML = 'Debug cleared...';
+        }
+
+        function reloadIframe() {
+            const iframes = document.querySelectorAll('iframe');
+            iframes.forEach((iframe, index) => {
+                log(`Reloading iframe ${index + 1}`);
+                iframe.src = iframe.src;
+            });
+        }
+
+        function checkIframeContent() {
+            const iframes = document.querySelectorAll('iframe');
+            iframes.forEach((iframe, index) => {
+                try {
+                    const doc = iframe.contentDocument || iframe.contentWindow.document;
+                    if (doc) {
+                        log(`Iframe ${index + 1}: Content accessible, title: "${doc.title}"`);
+                        
+                        // Check for click handlers
+                        const buttons = doc.querySelectorAll('button');
+                        log(`Iframe ${index + 1}: Found ${buttons.length} buttons`);
+                        
+                        // Check for errors in iframe console
+                        if (iframe.contentWindow.console) {
+                            log(`Iframe ${index + 1}: Console accessible`);
+                        }
+                    } else {
+                        log(`Iframe ${index + 1}: Content not accessible (cross-origin or security restriction)`);
+                    }
+                } catch (error) {
+                    log(`Iframe ${index + 1}: Error accessing content - ${error.message}`);
+                }
+            });
+        }
+
+        function testPostMessage() {
+            const iframes = document.querySelectorAll('iframe');
+            iframes.forEach((iframe, index) => {
+                log(`Sending test message to iframe ${index + 1}`);
+                iframe.contentWindow.postMessage({
+                    type: 'debug',
+                    message: 'Test message from parent'
+                }, '*');
+            });
+        }
+
+        // Listen for messages from iframes
+        window.addEventListener('message', function(event) {
+            log(`Received message from iframe: ${JSON.stringify(event.data)}`);
+        });
+
+        // Check iframe loading
+        document.querySelectorAll('iframe').forEach((iframe, index) => {
+            iframe.addEventListener('load', function() {
+                log(`Iframe ${index + 1} loaded successfully`);
+            });
+            
+            iframe.addEventListener('error', function() {
+                log(`Iframe ${index + 1} failed to load`);
+            });
+        });
+
+        // Initial setup
+        window.addEventListener('load', function() {
+            log('Debug page loaded');
+            log('Click "Check Iframe Content" to analyze iframe accessibility');
+            log('Open browser console for additional debugging information');
+        });
+    </script>
+</body>
+</html>

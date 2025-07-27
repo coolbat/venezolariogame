@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import AudioControls from '@/components/audio/AudioControls'
+import IframeDebugger from '@/components/debug/IframeDebugger'
 // import BackgroundMusic from '@/components/audio/BackgroundMusic'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -24,6 +25,7 @@ export default function RootLayout({
             {children}
           </div>
           <AudioControls />
+          <IframeDebugger />
           {/* BackgroundMusic disabled to prevent file not found errors in iframe */}
           {/* <BackgroundMusic src="/sounds/background-music.mp3" /> */}
         </div>
