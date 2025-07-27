@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useAudioStore } from '@/stores/audioStore'
 
 interface BackgroundMusicProps {
@@ -16,15 +16,20 @@ export default function BackgroundMusic({
 }: BackgroundMusicProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null)
   const fadeIntervalRef = useRef<NodeJS.Timeout | null>(null)
+  const [userInteracted, setUserInteracted] = useState(false)
   const { musicEnabled, musicVolume } = useAudioStore()
 
   useEffect(() => {
+    // Skip during SSR
+    if (typeof window === 'undefined') return
+    
     // Crear elemento de audio
-    const audio = new Audio(src)
+    const audio = new Audio()
     audioRef.current = audio
     
     audio.loop = true
     audio.preload = 'auto'
+    audio.crossOrigin = 'anonymous' // Para iframe compatibility
     
     // Configurar volumen inicial
     audio.volume = 0
@@ -35,16 +40,51 @@ export default function BackgroundMusic({
       }
     }
 
+    const handleError = (error: any) => {
+      console.warn('Background music file not found or failed to load:', error)
+      // No mostrar error al usuario, simplemente no reproducir música
+    }
+
     audio.addEventListener('canplaythrough', handleCanPlayThrough)
+    audio.addEventListener('error', handleError)
+
+    // Configurar src después de los event listeners
+    audio.src = src
 
     return () => {
       audio.removeEventListener('canplaythrough', handleCanPlayThrough)
+      audio.removeEventListener('error', handleError)
       if (fadeIntervalRef.current) {
         clearInterval(fadeIntervalRef.current)
       }
       audio.pause()
     }
   }, [src])
+
+  // 监听用户交互来启用音频播放（iframe要求）
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+
+    const handleUserInteraction = () => {
+      setUserInteracted(true)
+      // 如果音乐启用且用户已交互，尝试播放
+      if (musicEnabled && audioRef.current) {
+        startPlayback()
+      }
+    }
+
+    // 监听多种用户交互事件
+    const events = ['click', 'touchstart', 'keydown']
+    events.forEach(event => {
+      document.addEventListener(event, handleUserInteraction, { once: true })
+    })
+
+    return () => {
+      events.forEach(event => {
+        document.removeEventListener(event, handleUserInteraction)
+      })
+    }
+  }, [musicEnabled])
 
   // Manejar cambios en la configuración de música
   useEffect(() => {
@@ -69,11 +109,27 @@ export default function BackgroundMusic({
   const startPlayback = () => {
     if (!audioRef.current || !musicEnabled) return
 
-    audioRef.current.play().then(() => {
-      fadeIn()
-    }).catch(error => {
-      console.warn('Failed to start background music:', error)
-    })
+    // 在iframe中，需要等待用户交互
+    if (!userInteracted) {
+      console.log('Waiting for user interaction to start background music')
+      return
+    }
+
+    // 在iframe中，音频播放需要用户交互，优雅地处理这种情况
+    const playPromise = audioRef.current.play()
+    
+    if (playPromise !== undefined) {
+      playPromise.then(() => {
+        fadeIn()
+      }).catch(error => {
+        // 如果是用户交互要求的错误(DOMException)，在iframe中很常见
+        if (error.name === 'NotAllowedError') {
+          console.log('Background music requires user interaction to play in iframe')
+        } else {
+          console.warn('Failed to start background music:', error)
+        }
+      })
+    }
   }
 
   const stopPlayback = () => {

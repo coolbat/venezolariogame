@@ -24,6 +24,7 @@ export default function RootLayout({
             {children}
           </div>
           <AudioControls />
+          {/* BackgroundMusic will handle missing files gracefully */}
           <BackgroundMusic src="/sounds/background-music.mp3" />
         </div>
       </body>
