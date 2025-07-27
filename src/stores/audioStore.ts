@@ -47,10 +47,13 @@ const SOUND_FILES: Record<SoundType, string> = {
 
 // 创建音频实例缓存
 const audioCache: Map<SoundType, HTMLAudioElement> = new Map()
-const audioGenerator = new AudioGenerator()
+let audioGenerator: AudioGenerator | null = null
 
 // 预加载音频文件，如果失败则使用生成的音效
 const preloadAudio = (soundType: SoundType) => {
+  // Skip during SSR
+  if (typeof window === 'undefined') return null
+  
   if (!audioCache.has(soundType)) {
     const audio = new Audio(SOUND_FILES[soundType])
     audio.preload = 'auto'
@@ -66,10 +69,13 @@ const preloadAudio = (soundType: SoundType) => {
   return audioCache.get(soundType)!
 }
 
-// 预加载所有音效
-Object.keys(SOUND_FILES).forEach(soundType => {
-  preloadAudio(soundType as SoundType)
-})
+// 初始化音频生成器（仅在客户端）
+const initializeAudioGenerator = () => {
+  if (typeof window !== 'undefined' && !audioGenerator) {
+    audioGenerator = new AudioGenerator()
+  }
+  return audioGenerator
+}
 
 export const useAudioStore = create<AudioState>()(
   persist(
@@ -95,41 +101,44 @@ export const useAudioStore = create<AudioState>()(
       // 播放音效
       playSound: (soundType: SoundType) => {
         const state = get()
-        if (!state.soundEnabled) return
+        if (!state.soundEnabled || typeof window === 'undefined') return
 
         try {
           const audio = preloadAudio(soundType)
           
           // 如果文件加载失败或者标记使用生成音效，使用Web Audio API生成
-          if (audio.dataset.useGenerated === 'true' || audio.error) {
+          if (!audio || audio.dataset.useGenerated === 'true' || audio.error) {
+            const generator = initializeAudioGenerator()
+            if (!generator) return
+            
             let buffer: AudioBuffer | null = null
             
             switch (soundType) {
               case 'click':
-                buffer = audioGenerator.generateClickSound()
+                buffer = generator.generateClickSound()
                 break
               case 'correct':
-                buffer = audioGenerator.generateSuccessSound()
+                buffer = generator.generateSuccessSound()
                 break
               case 'incorrect':
-                buffer = audioGenerator.generateErrorSound()
+                buffer = generator.generateErrorSound()
                 break
               case 'hint':
-                buffer = audioGenerator.generateHintSound()
+                buffer = generator.generateHintSound()
                 break
               case 'level_up':
-                buffer = audioGenerator.generateLevelUpSound()
+                buffer = generator.generateLevelUpSound()
                 break
               case 'unlock':
-                buffer = audioGenerator.generateUnlockSound()
+                buffer = generator.generateUnlockSound()
                 break
               case 'card_flip':
-                buffer = audioGenerator.generateCardFlipSound()
+                buffer = generator.generateCardFlipSound()
                 break
             }
             
             if (buffer) {
-              audioGenerator.playBuffer(buffer, state.soundVolume)
+              generator.playBuffer(buffer, state.soundVolume)
             }
           } else {
             // 使用音频文件

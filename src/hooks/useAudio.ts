@@ -13,6 +13,9 @@ export function useAudio(src: string, options: UseAudioOptions = {}) {
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
+    // Skip audio creation during SSR
+    if (typeof window === 'undefined') return
+    
     const audio = new Audio(src)
     audioRef.current = audio
 

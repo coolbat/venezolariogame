@@ -3,7 +3,8 @@ class AudioGenerator {
   private context: AudioContext | null = null
 
   constructor() {
-    if (typeof window !== 'undefined') {
+    // Only create AudioContext on client side
+    if (typeof window !== 'undefined' && window.AudioContext) {
       this.context = new (window.AudioContext || (window as any).webkitAudioContext)()
     }
   }
