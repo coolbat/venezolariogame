@@ -32,13 +32,13 @@ export default function CategoryFilter({
   }
 
   return (
-    <div className="flex flex-wrap gap-3">
+    <div className="flex flex-wrap gap-3 justify-center">
       <button
         onClick={() => onCategoryChange('all')}
-        className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
+        className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-200 ${
           selectedCategory === 'all'
-            ? 'bg-white text-primary-600 shadow-lg'
-            : 'bg-white/10 text-white hover:bg-white/20'
+            ? 'bg-primary-500 text-white shadow-lg hover:bg-primary-600'
+            : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 shadow-sm'
         }`}
       >
         🌟 Todas
@@ -48,10 +48,10 @@ export default function CategoryFilter({
         <button
           key={category}
           onClick={() => onCategoryChange(category)}
-          className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
+          className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-200 ${
             selectedCategory === category
-              ? 'bg-white text-primary-600 shadow-lg'
-              : 'bg-white/10 text-white hover:bg-white/20'
+              ? 'bg-primary-500 text-white shadow-lg hover:bg-primary-600'
+              : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 shadow-sm'
           }`}
         >
           {getCategoryEmoji(category)} {getCategoryName(category)}

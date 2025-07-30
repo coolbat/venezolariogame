@@ -6,6 +6,8 @@ import { loadCards } from '@/lib/data'
 import CollectionCard from '@/components/cards/CollectionCard'
 import CollectionStats from '@/components/cards/CollectionStats'
 import RarityFilter from '@/components/cards/RarityFilter'
+import Navbar from '@/components/layout/Navbar'
+import Footer from '@/components/layout/Footer'
 
 export default function CardsPage() {
   const [cards, setCards] = useState<Card[]>([])
@@ -52,71 +54,74 @@ export default function CardsPage() {
 
   if (loading) {
     return (
-      <div className="h-full flex items-center justify-center">
-        <div className="text-white text-xl">Cargando colección de cartas...</div>
-      </div>
+      <>
+        <Navbar />
+        <div className="min-h-screen bg-gray-50 pt-16 flex items-center justify-center">
+          <div className="text-gray-800 text-xl">Cargando colección de cartas...</div>
+        </div>
+        <Footer />
+      </>
     )
   }
 
   return (
-    <div className="h-full w-full px-4 py-6">
-      {/* 页面标题 */}
-      <div className="flex items-center justify-between mb-6">
-        <button
-          onClick={() => window.history.back()}
-          className="text-white hover:text-yellow-300 transition-colors"
-        >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
-        
-        <h1 className="text-2xl font-bold text-white">Colección de Cartas</h1>
-        
-        <div className="w-6 h-6"></div>
-      </div>
+    <>
+      <Navbar />
+      <div className="min-h-screen bg-gray-50 pt-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          {/* 页面标题 */}
+          <div className="text-center mb-12">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">Colección de Cartas</h1>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Colecciona hermosas cartas culturales que narran las historias detrás de cada 
+              expresión venezolana. Cada carta desbloqueada es un paso más en tu aventura cultural.
+            </p>
+          </div>
 
-      {/* 收集统计 */}
-      <div className="mb-6">
-        <CollectionStats
-          totalCards={cards.length}
-          unlockedCards={unlockedCards.length}
-          collectionRate={collectionRate}
-        />
-      </div>
+          {/* 收集统计 */}
+          <div className="mb-8">
+            <CollectionStats
+              totalCards={cards.length}
+              unlockedCards={unlockedCards.length}
+              collectionRate={collectionRate}
+            />
+          </div>
 
-      {/* 稀有度筛选 */}
-      <div className="mb-6">
-        <RarityFilter
-          selectedRarity={selectedRarity}
-          onRarityChange={setSelectedRarity}
-        />
-      </div>
+          {/* 稀有度筛选 */}
+          <div className="mb-8">
+            <RarityFilter
+              selectedRarity={selectedRarity}
+              onRarityChange={setSelectedRarity}
+            />
+          </div>
 
-      {/* 卡片网格 */}
-      {filteredCards.length === 0 ? (
-        <div className="text-center text-white text-base">
-          {selectedRarity !== 'all' ? 'No hay cartas de esta rareza' : 'No hay cartas disponibles'}
-        </div>
-      ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {filteredCards.map((card) => (
-            <CollectionCard key={card.id} card={card} />
-          ))}
-        </div>
-      )}
+          {/* 卡片网格 */}
+          {filteredCards.length === 0 ? (
+            <div className="text-center text-gray-600 text-base">
+              {selectedRarity !== 'all' ? 'No hay cartas de esta rareza' : 'No hay cartas disponibles'}
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              {filteredCards.map((card) => (
+                <CollectionCard key={card.id} card={card} />
+              ))}
+            </div>
+          )}
 
-      {/* 收集提示 */}
-      <div className="mt-8 text-center">
-        <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 max-w-2xl mx-auto">
-          <h3 className="text-lg font-bold text-white mb-3">💡 ¿Cómo obtener más cartas?</h3>
-          <div className="text-white/90 space-y-2 text-sm">
-            <p>• Adivina palabras correctamente para desbloquear cartas culturales</p>
-            <p>• Cada palabra tiene su propia carta cultural esperando ser coleccionada</p>
-            <p>• Diferentes dificultades corresponden a diferentes rarezas de cartas</p>
+          {/* 收集提示 */}
+          <div className="mt-12 text-center">
+            <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 max-w-2xl mx-auto">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">💡 ¿Cómo obtener más cartas?</h3>
+              <div className="text-gray-600 space-y-3 text-sm">
+                <p>• Adivina palabras correctamente para desbloquear cartas culturales</p>
+                <p>• Cada palabra tiene su propia carta cultural esperando ser coleccionada</p>
+                <p>• Diferentes dificultades corresponden a diferentes rarezas de cartas</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   )
 }

@@ -58,14 +58,14 @@ export default function AudioControls() {
   }
 
   return (
-    <div className="fixed top-4 right-4 z-50">
+    <div className="fixed top-20 right-4 z-40">
       {/* Botón de audio */}
       <button
         onClick={() => {
           setIsOpen(!isOpen)
           playSound('click')
         }}
-        className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-full p-3 text-white hover:bg-white/20 transition-all duration-200"
+        className="bg-primary-500 hover:bg-primary-600 backdrop-blur-sm border border-primary-300 rounded-full p-3 text-white shadow-lg hover:shadow-xl transition-all duration-200"
         title="Configuración de audio"
       >
         {soundEnabled || musicEnabled || speechEnabled ? (
@@ -82,13 +82,13 @@ export default function AudioControls() {
 
       {/* Panel de controles */}
       {isOpen && (
-        <div className="absolute top-16 right-0 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 min-w-64 shadow-xl">
-          <h3 className="text-white font-semibold mb-4">Configuración de Audio</h3>
+        <div className="absolute top-16 right-0 bg-white backdrop-blur-md border border-gray-200 rounded-xl p-4 min-w-64 shadow-xl">
+          <h3 className="text-gray-800 font-semibold mb-4">Configuración de Audio</h3>
           
           {/* Control de efectos de sonido */}
           <div className="mb-4">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-white text-sm">Efectos de Sonido</span>
+              <span className="text-gray-700 text-sm">Efectos de Sonido</span>
               <button
                 onClick={handleSoundToggle}
                 className={`w-12 h-6 rounded-full transition-colors duration-200 ${
@@ -105,7 +105,7 @@ export default function AudioControls() {
             
             {soundEnabled && (
               <div className="flex items-center space-x-2">
-                <span className="text-white text-xs">🔉</span>
+                <span className="text-gray-600 text-xs">🔉</span>
                 <input
                   type="range"
                   min="0"
@@ -113,9 +113,9 @@ export default function AudioControls() {
                   step="0.1"
                   value={soundVolume}
                   onChange={(e) => handleSoundVolumeChange(parseFloat(e.target.value))}
-                  className="flex-1 h-2 bg-white/20 rounded-lg appearance-none cursor-pointer"
+                  className="flex-1 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
                 />
-                <span className="text-white text-xs">🔊</span>
+                <span className="text-gray-600 text-xs">🔊</span>
               </div>
             )}
           </div>
@@ -123,7 +123,7 @@ export default function AudioControls() {
           {/* Control de música */}
           <div className="mb-4">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-white text-sm">Música de Fondo</span>
+              <span className="text-gray-700 text-sm">Música de Fondo</span>
               <button
                 onClick={handleMusicToggle}
                 className={`w-12 h-6 rounded-full transition-colors duration-200 ${
@@ -140,7 +140,7 @@ export default function AudioControls() {
             
             {musicEnabled && (
               <div className="flex items-center space-x-2">
-                <span className="text-white text-xs">🎵</span>
+                <span className="text-gray-600 text-xs">🎵</span>
                 <input
                   type="range"
                   min="0"
@@ -148,9 +148,9 @@ export default function AudioControls() {
                   step="0.1"
                   value={musicVolume}
                   onChange={(e) => handleMusicVolumeChange(parseFloat(e.target.value))}
-                  className="flex-1 h-2 bg-white/20 rounded-lg appearance-none cursor-pointer"
+                  className="flex-1 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
                 />
-                <span className="text-white text-xs">🎶</span>
+                <span className="text-gray-600 text-xs">🎶</span>
               </div>
             )}
           </div>
@@ -158,7 +158,7 @@ export default function AudioControls() {
           {/* Control de pronunciación */}
           <div className="mb-4">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-white text-sm">Pronunciación</span>
+              <span className="text-gray-700 text-sm">Pronunciación</span>
               <button
                 onClick={handleSpeechToggle}
                 className={`w-12 h-6 rounded-full transition-colors duration-200 ${
@@ -178,11 +178,11 @@ export default function AudioControls() {
                 {/* Control de velocidad */}
                 <div>
                   <div className="flex items-center justify-between mb-1">
-                    <span className="text-white text-xs">Velocidad</span>
-                    <span className="text-white text-xs">{Math.round(speechRate * 100)}%</span>
+                    <span className="text-gray-600 text-xs">Velocidad</span>
+                    <span className="text-gray-600 text-xs">{Math.round(speechRate * 100)}%</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <span className="text-white text-xs">🐌</span>
+                    <span className="text-gray-600 text-xs">🐌</span>
                     <input
                       type="range"
                       min="0.3"
@@ -190,9 +190,9 @@ export default function AudioControls() {
                       step="0.1"
                       value={speechRate}
                       onChange={(e) => handleSpeechRateChange(parseFloat(e.target.value))}
-                      className="flex-1 h-2 bg-white/20 rounded-lg appearance-none cursor-pointer"
+                      className="flex-1 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
                     />
-                    <span className="text-white text-xs">🐰</span>
+                    <span className="text-gray-600 text-xs">🐰</span>
                   </div>
                 </div>
               </div>

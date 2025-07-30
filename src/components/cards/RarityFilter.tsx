@@ -22,10 +22,10 @@ export default function RarityFilter({ selectedRarity, onRarityChange }: RarityF
         <button
           key={rarity.value}
           onClick={() => onRarityChange(rarity.value)}
-          className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 flex items-center space-x-2 ${
+          className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-200 flex items-center space-x-2 ${
             selectedRarity === rarity.value
               ? `bg-gradient-to-r ${rarity.color} text-white shadow-lg transform scale-105`
-              : 'bg-white/10 text-white hover:bg-white/20'
+              : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 shadow-sm'
           }`}
         >
           <span>{rarity.emoji}</span>

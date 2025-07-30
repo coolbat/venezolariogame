@@ -36,3 +36,20 @@ export interface GuessResult {
   message: string
   score?: number
 }
+
+export interface BlogPost {
+  id: string
+  title: string
+  excerpt: string
+  content: string
+  author: string
+  publishedAt: string
+  updatedAt?: string
+  tags: string[]
+  category: string
+  slug: string
+  featured: boolean
+  readingTime: number
+  language?: 'es' | 'en'
+  translatedSlug?: string // 对应翻译版本的slug
+}
