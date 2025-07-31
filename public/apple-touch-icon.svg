@@ -1,0 +1,33 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with rounded corners -->
+  <rect width="180" height="180" rx="36" fill="#FFD700"/>
+  
+  <!-- Main book -->
+  <rect x="30" y="45" width="120" height="90" rx="6" fill="#FFFFFF" stroke="#CF1020" stroke-width="3"/>
+  
+  <!-- Book content lines -->
+  <rect x="36" y="54" width="96" height="3" fill="#CF1020"/>
+  <rect x="36" y="63" width="84" height="3" fill="#0072CE"/>
+  <rect x="36" y="72" width="90" height="3" fill="#0072CE"/>
+  <rect x="36" y="81" width="78" height="3" fill="#0072CE"/>
+  <rect x="36" y="90" width="87" height="3" fill="#0072CE"/>
+  <rect x="36" y="99" width="81" height="3" fill="#0072CE"/>
+  <rect x="36" y="108" width="84" height="3" fill="#0072CE"/>
+  <rect x="36" y="117" width="75" height="3" fill="#0072CE"/>
+  <rect x="36" y="126" width="78" height="3" fill="#0072CE"/>
+  
+  <!-- Venezuelan flag stripes at top -->
+  <rect x="30" y="30" width="120" height="6" fill="#FFD700"/>
+  <rect x="30" y="36" width="120" height="6" fill="#0072CE"/>
+  <rect x="30" y="42" width="120" height="6" fill="#CF1020"/>
+  
+  <!-- Large Venezuelan star -->
+  <polygon points="90,12 95.4,26.4 111.6,26.4 98.1,36.6 103.5,51 90,40.8 76.5,51 81.9,36.6 68.4,26.4 84.6,26.4" fill="#FFFFFF" stroke="#CF1020" stroke-width="1"/>
+  
+  <!-- Speech bubble -->
+  <ellipse cx="135" cy="67.5" rx="18" ry="15" fill="#FFD700" stroke="#CF1020" stroke-width="2"/>
+  <path d="M126 78 L135 87 L144 78" fill="#FFD700" stroke="#CF1020" stroke-width="2"/>
+  
+  <!-- VE text in speech bubble -->
+  <text x="135" y="72" text-anchor="middle" fill="#CF1020" font-family="Arial, sans-serif" font-size="12" font-weight="bold">VE</text>
+</svg>

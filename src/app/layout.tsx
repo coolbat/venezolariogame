@@ -75,6 +75,29 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
+        {/* Favicons and Icons */}
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/svg+xml" sizes="16x16" href="/favicon-16x16.svg" />
+        <link rel="icon" type="image/svg+xml" sizes="32x32" href="/favicon-32x32.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.svg" />
+        <link rel="icon" type="image/svg+xml" sizes="192x192" href="/icon.svg" />
+        
+        {/* Web App Manifest */}
+        <link rel="manifest" href="/site.webmanifest" />
+        
+        {/* Theme Colors */}
+        <meta name="theme-color" content="#FFD700" />
+        <meta name="msapplication-TileColor" content="#FFD700" />
+        
+        {/* Additional Meta Tags */}
+        <meta name="application-name" content="Venezolario" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="Venezolario" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="msapplication-config" content="/browserconfig.xml" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-JFPCT301DX"

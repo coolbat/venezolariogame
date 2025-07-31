@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://venezolario.vercel.app/sitemap.xml
+
+# Allow all search engines to crawl the site
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block access to admin areas (if any)
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /api/
+
+# Allow crawling of important pages
+Allow: /
+Allow: /blog/
+Allow: /dictionary/
+Allow: /cards/
+Allow: /game/
+
+# Crawl delay
+Crawl-delay: 1

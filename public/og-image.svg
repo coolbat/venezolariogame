@@ -1,0 +1,49 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0072CE;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Venezuelan flag -->
+  <rect x="50" y="50" width="300" height="200" fill="#FFD700"/>
+  <rect x="50" y="116.67" width="300" height="66.67" fill="#0072CE"/>
+  <rect x="50" y="183.33" width="300" height="66.67" fill="#CF1020"/>
+  
+  <!-- Stars on flag -->
+  <polygon points="200,90 208,110 230,110 212,124 220,144 200,130 180,144 188,124 170,110 192,110" fill="#FFFFFF"/>
+  <polygon points="120,150 126,165 142,165 129,175 135,190 120,180 105,190 111,175 98,165 114,165" fill="#FFFFFF"/>
+  <polygon points="280,150 286,165 302,165 289,175 295,190 280,180 265,190 271,175 258,165 274,165" fill="#FFFFFF"/>
+  <polygon points="160,210 166,225 182,225 169,235 175,250 160,240 145,250 151,235 138,225 154,225" fill="#FFFFFF"/>
+  <polygon points="240,210 246,225 262,225 249,235 255,250 240,240 225,250 231,235 218,225 234,225" fill="#FFFFFF"/>
+  
+  <!-- Main title -->
+  <text x="600" y="200" text-anchor="middle" fill="#CF1020" font-family="Arial, sans-serif" font-size="72" font-weight="bold">Venezolario</text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="280" text-anchor="middle" fill="#0072CE" font-family="Arial, sans-serif" font-size="36" font-weight="normal">Aprende Jerga Venezolana Jugando</text>
+  
+  <!-- Description -->
+  <text x="600" y="350" text-anchor="middle" fill="#333333" font-family="Arial, sans-serif" font-size="24">Descubre la rica cultura lingüística de Venezuela</text>
+  <text x="600" y="380" text-anchor="middle" fill="#333333" font-family="Arial, sans-serif" font-size="24">con nuestro juego interactivo educativo</text>
+  
+  <!-- Book icon -->
+  <rect x="450" y="420" width="300" height="150" rx="10" fill="#FFFFFF" stroke="#CF1020" stroke-width="4"/>
+  <rect x="465" y="435" width="240" height="8" fill="#CF1020"/>
+  <rect x="465" y="455" width="200" height="6" fill="#0072CE"/>
+  <rect x="465" y="475" width="220" height="6" fill="#0072CE"/>
+  <rect x="465" y="495" width="180" height="6" fill="#0072CE"/>
+  <rect x="465" y="515" width="210" height="6" fill="#0072CE"/>
+  <rect x="465" y="535" width="190" height="6" fill="#0072CE"/>
+  
+  <!-- Game elements -->
+  <circle cx="900" cy="400" r="80" fill="#FFD700" stroke="#CF1020" stroke-width="6"/>
+  <text x="900" y="415" text-anchor="middle" fill="#CF1020" font-family="Arial, sans-serif" font-size="48" font-weight="bold">🎮</text>
+  
+  <!-- Website URL -->
+  <text x="600" y="600" text-anchor="middle" fill="#666666" font-family="Arial, sans-serif" font-size="20">venezolario.vercel.app</text>
+</svg>

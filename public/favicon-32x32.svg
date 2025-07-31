@@ -1,0 +1,22 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="32" height="32" rx="6" fill="#FFD700"/>
+  
+  <!-- Book -->
+  <rect x="4" y="8" width="24" height="16" rx="2" fill="#FFFFFF" stroke="#CF1020" stroke-width="1"/>
+  
+  <!-- Lines -->
+  <rect x="6" y="10" width="16" height="1" fill="#CF1020"/>
+  <rect x="6" y="13" width="12" height="1" fill="#0072CE"/>
+  <rect x="6" y="16" width="14" height="1" fill="#0072CE"/>
+  <rect x="6" y="19" width="10" height="1" fill="#0072CE"/>
+  <rect x="6" y="22" width="13" height="1" fill="#0072CE"/>
+  
+  <!-- Venezuelan star -->
+  <polygon points="16,2 17.2,5.6 21,5.6 18.4,8 19.6,11.6 16,9.2 12.4,11.6 13.6,8 11,5.6 14.8,5.6" fill="#FFFFFF"/>
+  
+  <!-- Small flag stripes -->
+  <rect x="26" y="8" width="4" height="2" fill="#FFD700"/>
+  <rect x="26" y="10" width="4" height="2" fill="#0072CE"/>
+  <rect x="26" y="12" width="4" height="2" fill="#CF1020"/>
+</svg>
