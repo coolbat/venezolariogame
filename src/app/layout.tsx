@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 import AudioControls from '@/components/audio/AudioControls'
 import { LanguageProvider } from '@/contexts/LanguageContext'
@@ -73,6 +74,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
+      <head>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-JFPCT301DX"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-JFPCT301DX');
+          `}
+        </Script>
+      </head>
       <body className={inter.className}>
         <LanguageProvider>
           {children}
