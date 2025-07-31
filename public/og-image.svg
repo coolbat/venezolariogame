@@ -45,5 +45,5 @@
   <text x="900" y="415" text-anchor="middle" fill="#CF1020" font-family="Arial, sans-serif" font-size="48" font-weight="bold">🎮</text>
   
   <!-- Website URL -->
-  <text x="600" y="600" text-anchor="middle" fill="#666666" font-family="Arial, sans-serif" font-size="20">venezolario.vercel.app</text>
+  <text x="600" y="600" text-anchor="middle" fill="#666666" font-family="Arial, sans-serif" font-size="20">venezolario.app</text>
 </svg>

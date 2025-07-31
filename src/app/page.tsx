@@ -10,7 +10,7 @@ const structuredData = {
   "@type": "WebApplication",
   "name": "Venezolario",
   "description": "Juego educativo interactivo para aprender jerga venezolana auténtica con contexto cultural.",
-  "url": "https://venezolario.vercel.app",
+  "url": "https://venezolario.app",
   "applicationCategory": "EducationalApplication",
   "operatingSystem": "Web",
   "browserRequirements": "Requires JavaScript enabled",

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://venezolario.vercel.app'),
+  metadataBase: new URL('https://venezolario.app'),
   alternates: {
     canonical: '/',
     languages: {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'es_ES',
-    url: 'https://venezolario.vercel.app',
+    url: 'https://venezolario.app',
     title: 'Venezolario - Aprende Jerga Venezolana Jugando',
     description: 'Descubre la rica cultura lingüística de Venezuela con nuestro juego interactivo. Aprende jerga venezolana auténtica, pronunciación correcta y contexto cultural de manera divertida.',
     siteName: 'Venezolario',

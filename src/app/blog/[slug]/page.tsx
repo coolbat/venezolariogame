@@ -85,12 +85,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       "name": "Venezolario",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://venezolario.vercel.app/logo.png"
+        "url": "https://venezolario.app/logo.png"
       }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://venezolario.vercel.app/blog/${post.slug}`
+      "@id": `https://venezolario.app/blog/${slug}`
     },
     "keywords": post.tags.join(", "),
     "articleSection": post.category,
@@ -150,7 +150,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
               {/* Social Share */}
               <SocialShare
-                url={`https://venezolario.vercel.app/blog/${post.slug}`}
+                url={`https://venezolario.app/blog/${slug}`}
                 title={post.title}
                 description={post.excerpt}
               />
@@ -172,7 +172,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 Compártelo con tus amigos y ayúdanos a difundir la cultura venezolana
               </p>
               <SocialShare
-                url={`https://venezolario.vercel.app/blog/${post.slug}`}
+                url={`https://venezolario.app/blog/${slug}`}
                 title={`Me encantó este artículo: ${post.title}`}
                 description={post.excerpt}
               />

@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { getAllBlogPosts } from '@/lib/blog'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://venezolario.vercel.app'
+  const baseUrl = 'https://venezolario.app'
   
   // Get all blog posts
   const blogPosts = await getAllBlogPosts()
